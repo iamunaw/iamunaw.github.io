@@ -3,21 +3,23 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@3.3.3/dist/tailwind.min.css" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
     <title>Una.W Portfolio｜個人作品集</title>
 </head>
 <body>                
     <!-- 版頭 -->
     <header>
-
         <div class="logo" aria-label="Website Logo">My Portfolio</div>
-        <nav aria-label="Main Navigation">
-            <ul>
-                <li><a href="#home" aria-label="Go to Home section">Home</a></li>
-                <li><a href="#about" aria-label="Go to About section">About</a></li>
-                <li><a href="#projects" aria-label="Go to Projects section">Projects</a></li>
-                <li><a href="#contact" aria-label="Go to Contact section">Contact</a></li>
-            </ul>
+        <nav class="bg-gray-800 p-4">
+            <div class="container mx-auto">
+              <a href="#" class="text-white text-lg font-bold">My Website</a>
+              <ul class="flex space-x-4 mt-2">
+                <li><a href="#" class="text-gray-300 hover:text-white">Home</a></li>
+                <li><a href="#" class="text-gray-300 hover:text-white">About</a></li>
+                <li><a href="#" class="text-gray-300 hover:text-white">Contact</a></li>
+              </ul>
+            </div>
         </nav>
     </header>
 
@@ -27,12 +29,30 @@
             <h1>Welcome to My Portfolio</h1>
             <p>Explore my projects and learn more about me. This is a place to showcase my work and skills.</p>
         </section>
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
+            <div class="bg-white shadow-lg rounded-lg p-4">
+              <h2 class="text-2xl font-bold text-gray-800">Card Title</h2>
+              <p class="text-gray-600 mt-2">This is a simple card component.</p>
+              <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Learn More</button>
+            </div>
+            <div class="bg-white shadow-lg rounded-lg p-4">
+              <h2 class="text-2xl font-bold text-gray-800">Card Title</h2>
+              <p class="text-gray-600 mt-2">This is a simple card component.</p>
+              <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Learn More</button>
+            </div>
+            <div class="bg-white shadow-lg rounded-lg p-4">
+              <h2 class="text-2xl font-bold text-gray-800">Card Title</h2>
+              <p class="text-gray-600 mt-2">This is a simple card component.</p>
+              <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Learn More</button>
+            </div>
+        </div>  
     </main>
 
     <!-- 版尾 -->
-    <footer>
-        <p>&copy; 2024 Una Wang. All Rights Reserved.</p>
-        <p>Designed by <a href="https://iamunaw.github.io" target="_blank" rel="noopener">Una</a></p>
+    <footer class="bg-gray-800 text-white py-4 mt-8">
+        <div class="container mx-auto text-center">
+          <p>&copy; 2025 My Website. All rights reserved.</p>
+        </div>
     </footer>
 </body>
 
