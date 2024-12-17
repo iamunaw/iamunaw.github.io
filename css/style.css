@@ -101,6 +101,7 @@ header nav{ display: none;}
 
 .skills-box ul{ display: flex; flex-wrap: wrap;}
 .skills-box ul li{ margin: 0 10px 10px 0; background-color:var(--other-color-white); line-height: 34px; color:var(--secondary-color-black)}
+.skills-box ul li span{ display: block;}
 .skills-box ul li span.s-figma{ background: url(../images/skills/icon-figma.svg);}
 .skills-box ul li span.s-xd{ background: url(../images/skills/icon-xd.svg);}
 .skills-box ul li span.s-sketch{ background: url(../images/skills/icon-sketch.svg);}
