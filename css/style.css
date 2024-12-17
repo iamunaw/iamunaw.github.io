@@ -111,6 +111,9 @@ header nav{ display: none;}
 .experience-01 h3{ background: url(../images/office/icon-ewebs.svg) left center no-repeat; background-size: 25px; padding-left: 35px;}
 .experience-02 h3{ background: url(../images/office/icon-sh.svg) left center no-repeat; background-size: 25px; padding-left: 35px;}
 
+.experience-right ul{ display: flex; flex-wrap: nowrap; align-items: flex-start;}
+.experience-right ul li:first-child{ font-size: 14px; color: var(--primary-color-brown);}
+.experience-right ul li:last-child{ font-size: 13px; color: var(--secondary-color-black);}
 
 
 /* 右側-技能 */
@@ -141,6 +144,8 @@ header nav{ display: none;}
 
 
 /* --- 版尾 --- */
+
+
 
 
 
