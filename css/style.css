@@ -70,6 +70,7 @@ table {
 }
 
 .mr-b10{ margin-bottom: 10px;}
+.mr-b25{ margin-bottom: 25px;} /* 元件間距 */
 body,html{ background-color: var(--other-color-gray10); font-size: 13px; line-height: 1.5; font-family: "HunInn","Noto Sans TC", serif; color: var(--secondary-color-black);}
 
 header{ width:345px; height: 85px; background-color: var(--other-color-gray30); padding: 15px 0; position: fixed; z-index: 10;}
