@@ -72,16 +72,16 @@ table {
 .mr-b10{ margin-bottom: 10px;}
 
 body,html{ background-color: var(--other-color-gray10); font-size: 13px; line-height: 1.5;  font-family: "HunInn","Noto Sans TC", serif;}
-header{ max-width:345px;}
+header{ max-width:345px; background-color: var(--other-color-gray30);}
 header .logo,header .logo a{ max-width: 146px; height: 85px; margin: 0 auto;}
 header .logo a{ background: url(../images/header/logo.svg); text-indent: -9999px;}
 header nav{ display: none;}
 
 .main-flex{ display: flex;}
-.main-flex .section-left{ max-width: 345px; height: 100vh; padding: 20px 25px; background: url(../images/header/bg.svg) var(--other-color-gray30) left top repeat-x;}
+.main-flex .section-left{ max-width: 305px; height: 100vh; padding: 20px 25px; background: url(../images/header/bg.svg) var(--other-color-gray30) left top repeat-x;}
 .main-flex .section-right{ max-width: calc(100% - 345px);}
 
-.info-box{ background: url(../images/header/bg.svg) left top repeat-x;}
+
 .info-box > img{ display: block; width: 165px; height: 165px; border: 7px; border-radius: 165px; overflow: hidden; margin: 0 auto;}
 .info-box > h1{ width: 100%; text-align: center; font-size: 25px; color: var(--primary-color-brown);}
 .info-box > span{ display: block; width: 100%; text-align: center; font-size: 15px; color: var(--secondary-color-gray);}
