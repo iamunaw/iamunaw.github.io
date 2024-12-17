@@ -100,28 +100,28 @@ header nav{ display: none;}
 .contact-box ul li a{ color: var(--secondary-color-black); color: var(--secondary-color-black); line-height: 24px;}
 
 .skills-box ul{ display: flex; flex-wrap: wrap;}
-.skills-box ul li{ margin: 0 10px 10px 0; background-color:var(--other-color-white); line-height: 34px; color:var(--secondary-color-black)}
+.skills-box ul li{ margin: 0 10px 10px 0; background-color:var(--other-color-white); line-height: 34px; color:var(--secondary-color-black); padding: 0 10px 0 8px;}
 .skills-box ul li span{ display: block; background-repeat: no-repeat; background-position: left center; background-size: auto 24px;}
-.skills-box ul li span.s-figma{ background-image: url(../images/skills/icon-figma.svg);}
-.skills-box ul li span.s-xd{ background-image: url(../images/skills/icon-xd.svg);}
-.skills-box ul li span.s-sketch{ background-image: url(../images/skills/icon-sketch.svg);}
-.skills-box ul li span.s-canva{ background-image: url(../images/skills/icon-canva.svg);}
-.skills-box ul li span.s-zeplin{ background-image: url(../images/skills/icon-zeplin.svg);}
-.skills-box ul li span.s-lottie{ background-image: url(../images/skills/icon-lottie.svg);}
-.skills-box ul li span.s-vsc{ background-image: url(../images/skills/icon-vscode.svg);}
-.skills-box ul li span.s-bsp{ background-image: url(../images/skills/icon-bootstrap.svg);}
-.skills-box ul li span.s-twcss{ background-image: url(../images/skills/icon-tailwindcss.svg);}
-.skills-box ul li span.s-html{ background-image: url(../images/skills/icon-html5.svg);}
-.skills-box ul li span.s-jqy{ background-image: url(../images/skills/icon-jquery.svg);}
-.skills-box ul li span.s-vue{ background-image: url(../images/skills/icon-vue.svg);}
-.skills-box ul li span.s-gitlab{ background-image: url(../images/skills/icon-gitlab.svg);}
-.skills-box ul li span.s-github{ background-image: url(../images/skills/icon-github.svg);}
-.skills-box ul li span.s-git{ background-image: url(../images/skills/icon-git.svg);}
-.skills-box ul li span.s-sass{ background-image: url(../images/skills/icon-sass.svg);}
-.skills-box ul li span.s-axure{ background-image: url(../images/skills/icon-axure.png);}
-.skills-box ul li span.s-gpt{ background-image: url(../images/skills/icon-gpt.png);}
-.skills-box ul li span.s-mjy{ background-image: url(../images/skills/icon-mj.png);}
-.skills-box ul li span.s-notion{ background-image: url(../images/skills/icon-notion.png);}
+.skills-box ul li span.s-figma{ background-image: url(../images/skills/icon-figma.svg); padding-left: 30px;}
+.skills-box ul li span.s-xd{ background-image: url(../images/skills/icon-xd.svg); padding-left: 30px;}
+.skills-box ul li span.s-sketch{ background-image: url(../images/skills/icon-sketch.svg); padding-left: 30px;}
+.skills-box ul li span.s-canva{ background-image: url(../images/skills/icon-canva.svg); padding-left: 30px;}
+.skills-box ul li span.s-zeplin{ background-image: url(../images/skills/icon-zeplin.svg); padding-left: 30px;}
+.skills-box ul li span.s-lottie{ background-image: url(../images/skills/icon-lottie.svg); padding-left: 30px;}
+.skills-box ul li span.s-vsc{ background-image: url(../images/skills/icon-vscode.svg); padding-left: 30px;}
+.skills-box ul li span.s-bsp{ background-image: url(../images/skills/icon-bootstrap.svg); padding-left: 30px;}
+.skills-box ul li span.s-twcss{ background-image: url(../images/skills/icon-tailwindcss.svg); padding-left: 30px;}
+.skills-box ul li span.s-html{ background-image: url(../images/skills/icon-html5.svg); padding-left: 30px;}
+.skills-box ul li span.s-jqy{ background-image: url(../images/skills/icon-jquery.svg); padding-left: 30px;}
+.skills-box ul li span.s-vue{ background-image: url(../images/skills/icon-vue.svg); padding-left: 30px;}
+.skills-box ul li span.s-gitlab{ background-image: url(../images/skills/icon-gitlab.svg); padding-left: 30px;}
+.skills-box ul li span.s-github{ background-image: url(../images/skills/icon-github.svg) padding-left: 30px;}
+.skills-box ul li span.s-git{ background-image: url(../images/skills/icon-git.svg); padding-left: 30px;}
+.skills-box ul li span.s-sass{ background-image: url(../images/skills/icon-sass.svg); padding-left: 30px;}
+.skills-box ul li span.s-axure{ background-image: url(../images/skills/icon-axure.png); padding-left: 30px;}
+.skills-box ul li span.s-gpt{ background-image: url(../images/skills/icon-gpt.png); padding-left: 30px;}
+.skills-box ul li span.s-mjy{ background-image: url(../images/skills/icon-mj.png); padding-left: 30px;}
+.skills-box ul li span.s-notion{ background-image: url(../images/skills/icon-notion.png); padding-left: 30px;}
 
 /* --- 版尾 --- */
 
