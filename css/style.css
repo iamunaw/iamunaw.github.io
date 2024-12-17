@@ -10,7 +10,7 @@
 }
 @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');
 
-/* reset */
+/* ====== reset ====== */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -55,9 +55,9 @@ table {
     border-spacing: 0;
 }
 
-/* 宣告變數 */
+/* ====== 宣告變數 & 規範定義 ====== */
 :root {
-   /* --- 顏色定義 --- */
+/* --- 顏色定義 --- */
    --primary-color-brown: #5E4F45; /* 標題 */
 
    --secondary-color-brown: #8B7F76; /* 線段 */
@@ -67,25 +67,39 @@ table {
    --other-color-white:#fff; /* 白色 */
    --other-color-gray10:#F4F4F4; /* 背景色-淺灰 */
    --other-color-gray30:#E6E6E6; /*背景色-深灰*/
-}
 
-.mr-b10{ margin-bottom: 10px;}
+}
+/* --- 間距定義 --- */
+.mr-b10{ margin-bottom: 10px;} /* 文案間距 */
 .mr-b25{ margin-bottom: 25px;} /* 元件間距 */
+
+/* ====== 網站資訊 ====== */
 body,html{ background-color: var(--other-color-gray10); font-size: 13px; line-height: 1.5; font-family: "HunInn","Noto Sans TC", serif; color: var(--secondary-color-black);}
 
+/* --- 共用 --- */
+.content-title{ display: inline-block; width: auto; margin-bottom:10px; font-size: 16px; line-height: 1.5; color:var(--primary-color-brown);}
+
+/* --- 版頭 --- */
 header{ width:345px; height: 85px; background-color: var(--other-color-gray30); padding: 15px 0; position: fixed; z-index: 10;}
 header .logo,header .logo a{ display: block; width: 146px; height: 85px; margin: 0 auto;}
 header .logo a{ background: url(../images/header/logo.svg); text-indent: -9999px;}
 header nav{ display: none;}
 
+/* --- 內容 --- */
 .main-flex{ display: flex;}
 .main-flex .section-left{ position: fixed; z-index: 1; max-width: 295px; height: 100vh; margin-top: 115px; padding: 20px 25px; background: url(../images/header/bg.svg) var(--other-color-gray30) left top repeat-x;}
 .main-flex .section-right{ max-width: calc(100% - 345px); margin-left: 380px;}
 
-
 .info-box > img{ display: block; width: 165px; height: 165px; border: 7px solid var(--other-color-gray30); border-radius: 165px; overflow: hidden; margin: 0 auto;}
 .info-box > h1{ width: 100%; text-align: center; font-size: 25px; color: var(--primary-color-brown); letter-spacing: 5px;}
 .info-box > span{ display: block; width: 100%; text-align: center; font-size: 15px; color: var(--secondary-color-gray);}
+
+.contact-box ul li:nth-child(1){}
+.contact-box ul li:nth-child(2){}
+
+/* --- 版尾 --- */
+
+
 
 
 /*                       
