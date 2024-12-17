@@ -1,6 +1,10 @@
 .logo{ max-width: 146px; height: 85px; background: url(images/header/logo.svg);}
 
 
+.main-flex{ display: flex;}
+.main-flex .section-left{ width: 345px; height: 100vh;}
+.main-flex .section-right{ width: calc(100% - 345px);}
+
 /*                       
 ___  ___  ________   ________      ___       __      
 |\  \|\  \|\   ___  \|\   __  \    |\  \     |\  \    
