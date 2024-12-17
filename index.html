@@ -3,58 +3,76 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="css/style.css">
     <title>Una.W Portfolio｜個人作品集</title>
 </head>
 <body>                
     <!-- 版頭 -->
     <header>
-        <div class="logo" aria-label="Website Logo">My Portfolio</div>
-        <nav class="bg-gray-800 p-4">
-            <div class="container mx-auto">
-              <a href="#" class="text-white text-lg font-bold">My Website</a>
-              <ul class="flex space-x-4 mt-2">
-                <li><a href="#" class="text-gray-300 hover:text-white">Home</a></li>
-                <li><a href="#" class="text-gray-300 hover:text-white">About</a></li>
-                <li><a href="#" class="text-gray-300 hover:text-white">Contact</a></li>
-              </ul>
-            </div>
+        <div class="logo"><a href="#" title="">Una.W Portfolio｜個人作品集N</a></div>
+        <nav>
+          <ul class="main-menu">
+            <li><a href="#" class="">Home 回首頁</a></li>
+            <li><a href="#" class="">About 關於我</a></li>
+            <li><a href="#" class="">Contact 聯繫我</a></li>
+          </ul>
         </nav>
     </header>
 
     <!-- 主內容區 -->
-    
-    <main>
-        <section id="home">
-            <h1>Welcome to My Portfolio</h1>
-            <p>Explore my projects and learn more about me. This is a place to showcase my work and skills.</p>
-        </section>
-        <div class="grid grid-cols-1 md:grid-cols-3 gap-4 mt-8">
-            <div class="bg-white shadow-lg rounded-lg p-4">
-              <h2 class="text-2xl font-bold text-gray-800">Card Title</h2>
-              <p class="text-gray-600 mt-2">This is a simple card component.</p>
-              <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Learn More</button>
-            </div>
-            <div class="bg-white shadow-lg rounded-lg p-4">
-              <h2 class="text-2xl font-bold text-gray-800">Card Title</h2>
-              <p class="text-gray-600 mt-2">This is a simple card component.</p>
-              <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Learn More</button>
-            </div>
-            <div class="bg-white shadow-lg rounded-lg p-4">
-              <h2 class="text-2xl font-bold text-gray-800">Card Title</h2>
-              <p class="text-gray-600 mt-2">This is a simple card component.</p>
-              <button class="mt-4 bg-blue-500 text-white px-4 py-2 rounded hover:bg-blue-600">Learn More</button>
-            </div>
-        </div>  
-        <section class="my-12 text-center">
-          <h2 class="text-2xl font-bold mb-6">Skills</h2>
-          <div class="flex flex-wrap justify-center gap-4">
-            <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-lg">HTML</span>
-            <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-lg">CSS</span>
-            <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-lg">JavaScript</span>
-            <span class="bg-blue-100 text-blue-800 px-4 py-2 rounded-lg">React</span>
+    <main class="main-flex">
+        <section class="section-left">
+          <div class="content info-box">
+            <img src="">
+            <h1>王韻綺</h1>
+            <span>UNA WANG</span>
+            <p>我擁有12年UI/UX及前端開發經驗，其中6年擔任電商資深設計經理，帶領超過7人的團隊。主要成就包括建立設計知識庫、規劃職涯技能樹及設計標準，並優化內部工作流程，為組織奠定穩固基礎。專業涵蓋UI與UX設計全方位，特別擅長界面設計。
+              近期擔任資深專案經理，領導超過10人的團隊，負責專案前期需求訪談、功能規劃及成本管理，擅長專案資源分配及人力效率最大化。職涯中曾與許多知名企業合作，包括陽明海運、三大超商（統一、全家、萊爾富）、新光三越及跨國際LINE FRIENDS等專案執行。
+              此外，參與多項澎湖、桃園政府專案，具備A+無障礙網站實施經驗，也曾在中小企業擔任電農培訓講師，指導農民產品攝影及行銷技巧推廣自家農產品。我熱愛UI/UX設計與前端技術，並致力於探索AI與設計的共存，為組織帶來深遠影響。</p>
           </div>
+          <div class="content contact-box">
+            <h3 class="content-title">CONTACT</h3>
+            <ul>
+              <li><a href="mailto:unawang0202@gmail.com">unawang0202@gmail.com</a></li>
+              <li><a href="linkedin.com/in/iamycw">linkedin.com/in/iamycw/</a></li>
+            </ul>
+          </div>
+        </section>
+        <section class="section-right">
+          <div class="content experience-box">
+            <h3 class="content-title">EXPERIENCE</h3>
+            <ul>
+              <li><a href="mailto:unawang0202@gmail.com">unawang0202@gmail.com</a></li>
+              <li><a href="linkedin.com/in/iamycw">linkedin.com/in/iamycw/</a></li>
+            </ul>
+          </div>
+          <div class="content skills-box">
+            <h3 class="content-title">SKILLS</h3>
+            <ul>
+              <li><span class="s-figma">Figma</span></li>
+              <li><span class="s-xd">Adobe XD</span></li>
+              <li><span class="s-sketch">Sketch</span></li>
+              <li><span class="s-canva">Canva</span></li>
+              <li><span class="s-zeplin">Zeplin</span></li>
+              <li><span class="s-lottie">Lottie</span></li>
+              <li><span class="s-vsc">VScode</span></li>
+              <li><span class="s-bsp">Bootstrap</span></li>
+              <li><span class="s-twcss">Tailwind CSS</span></li>
+              <li><span class="s-html">HTML5</span></li>
+              <li><span class="s-jqy">JQuery</span></li>
+              <li><span class="s-vue">Vue.js</span></li>
+              <li><span class="s-gitlab">GitLab</span></li>
+              <li><span class="s-github">GitHub</span></li>
+              <li><span class="s-github">GitHub</span></li>
+              <li><span class="s-git">Git</span></li>
+              <li><span class="s-sass">Sass</span></li>
+              <li><span class="s-axure">Axure</span></li>
+              <li><span class="s-gpt">ChatGPT</span></li>
+              <li><span class="s-mjy">Ｍidjourney</span></li>
+              <li><span class="s-notion">Notion</span></li>
+            </ul>
+          </div>
+        
         </section>
     </main>
 
