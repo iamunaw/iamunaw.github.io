@@ -1,9 +1,23 @@
+:root {
+   /* --- 顏色定義 --- */
+   --primary-color-brown: #5E4F45; /* 標題 */
+
+   --secondary-color-brown: #8B7F76; /* 線段 */
+   --secondary-color-black: #333333; /* 文字 */
+
+   --other-color-white:#fff; /* 白色 */
+   --other-color-gray10:#F4F4F4; /* 背景色-淺灰 */
+   --other-color-gray30:#E6E6E6; /*背景色-深灰*/
+
+}
+body,html{ background-color: var(--other-color-gray10);}
+header{ max-width:345px;}
 .logo{ max-width: 146px; height: 85px; background: url(../images/header/logo.svg);}
 
 
 .main-flex{ display: flex;}
-.main-flex .section-left{ width: 345px; height: 100vh;}
-.main-flex .section-right{ width: calc(100% - 345px);}
+.main-flex .section-left{ max-width: 345px; height: 100vh; padding: 20px 25px; background-color: var(--other-color-gray30);;}
+.main-flex .section-right{ max-width: calc(100% - 345px);}
 
 /*                       
 ___  ___  ________   ________      ___       __      
