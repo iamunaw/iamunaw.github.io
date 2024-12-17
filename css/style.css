@@ -77,7 +77,7 @@ table {
 body,html{ background-color: var(--other-color-gray10); font-size: 13px; line-height: 1.5; font-family: "HunInn","Noto Sans TC", serif; color: var(--secondary-color-black);}
 
 /* --- 共用 --- */
-.content-title{ display: inline-block; width: auto; margin-bottom:10px; font-size: 16px; line-height: 1.5; color:var(--primary-color-brown);}
+.content-title{ display: inline-block; width: auto; margin-bottom:10px; font-size: 16px; line-height: 1.5; color:var(--primary-color-brown); border-bottom:2px solid var(--other-color-white);}
 
 /* --- 版頭 --- */
 header{ width:345px; height: 85px; background-color: var(--other-color-gray30); padding: 15px 0; position: fixed; z-index: 10;}
@@ -97,7 +97,7 @@ header nav{ display: none;}
 .contact-box ul li:nth-child(1){ background: url(../images/header/icon-mail.svg) left center no-repeat; background-size: 24px;}
 .contact-box ul li:nth-child(2){ background: url(../images/header/icon-linkedin.svg) left center no-repeat; background-size: 24px;}
 .contact-box ul li{ display: block; width: 100%; margin-bottom: 10px; padding-left: 35px;}
-.contact-box ul li a{ color: var(--secondary-color-black);}
+.contact-box ul li a{ color: var(--secondary-color-black); color: var(--secondary-color-black); line-height: 24px;}
 
 /* --- 版尾 --- */
 
