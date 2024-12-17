@@ -61,7 +61,8 @@ table {
 
 body,html{ background-color: var(--other-color-gray10); font-size: 13px; line-height: 1.5;  font-family: "Noto Sans TC", serif;}
 header{ max-width:345px;}
-header .logo{ max-width: 146px; height: 85px; background: url(../images/header/logo.svg);}
+header .logo{ max-width: 146px; height: 85px; margin: 0 auto;}
+header .logo a{ display: block; width: 100%; height: auto; background: url(../images/header/logo.svg);}
 
 
 .main-flex{ display: flex;}
