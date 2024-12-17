@@ -43,6 +43,15 @@ table {
     border-spacing: 0;
 }
 
+@font-face {
+	font-family: 'HunInn';
+	src: url(https://cdn.jsdelivr.net/gh/marsnow/open-huninn-font@1.1/font/jf-openhuninn.eot); /* IE9 Compat Modes */
+	src: url(https://cdn.jsdelivr.net/gh/marsnow/open-huninn-font@1.1/font/jf-openhuninn.eot?#iefix) format("embedded-opentype"), /* IE6-IE8 */
+	url(https://cdn.jsdelivr.net/gh/marsnow/open-huninn-font@1.1/font/jf-openhuninn.woff) format("woff"), /* Modern Browsers */
+	url(https://cdn.jsdelivr.net/gh/marsnow/open-huninn-font@1.1/font/jf-openhuninn.ttf) format("truetype"), /* Safari, Android, iOS */
+	url(https://cdn.jsdelivr.net/gh/marsnow/open-huninn-font@1.1/font/jf-openhuninn.svg#SealmemoryHeader) format("svg"); /* Legacy iOS */
+}
+
 /* 宣告變數 */
 :root {
    /* --- 顏色定義 --- */
@@ -59,7 +68,7 @@ table {
 
 .mr-b10{ margin-bottom: 10px;}
 
-body,html{ background-color: var(--other-color-gray10); font-size: 13px; line-height: 1.5;}
+body,html{ background-color: var(--other-color-gray10); font-size: 13px; line-height: 1.5; font-family: 'HunInn',Georgia, 'Times New Roman', Times, serif;}
 header{ max-width:345px;}
 header .logo{ max-width: 146px; height: 85px; background: url(../images/header/logo.svg);}
 
