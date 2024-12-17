@@ -102,8 +102,8 @@ header nav{ display: none;}
 
 /* 右側-經歷 */
 .experience-list{ display: flex; flex-wrap: nowrap;}
-.experience-list .experience-left{ width: 125px;}
-.experience-list .experience-right{ width: calc(100% - 125px);}
+.experience-list .experience-left{ width: 155px;}
+.experience-list .experience-right{ width: calc(100% - 125px); padding-left:28px;}
 .experience-list h3{ font-size: 15px; color: var(--primary-color-brown);}
 .experience-list .experience-left > span{ display: flex; align-items: center;}
 .experience-list .experience-left > span small{ display: inline-block; padding: 0 5px; font-size: 11px; color:var(--secondary-color-gray);}
@@ -111,9 +111,9 @@ header nav{ display: none;}
 .experience-01 h3{ background: url(../images/office/icon-ewebs.svg) left center no-repeat; background-size: 25px; padding-left: 35px;}
 .experience-02 h3{ background: url(../images/office/icon-sh.svg) left center no-repeat; background-size: 25px; padding-left: 35px;}
 
-.experience-right ul{ display: flex; flex-wrap: nowrap; align-items: flex-start;}
-.experience-right ul li:first-child{ font-size: 14px; color: var(--primary-color-brown);}
-.experience-right ul li:last-child{ font-size: 13px; color: var(--secondary-color-black);}
+.experience-right ul{ display: flex; flex-wrap: nowrap; align-items: flex-start; margin-bottom: 15px;}
+.experience-right ul li:first-child{ width: 75px; font-size: 14px; color: var(--primary-color-brown);}
+.experience-right ul li:last-child{ width: calc(100% - 75px); font-size: 13px; color: var(--secondary-color-black);}
 
 
 /* 右側-技能 */
