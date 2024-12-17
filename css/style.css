@@ -49,7 +49,8 @@ table {
    --primary-color-brown: #5E4F45; /* 標題 */
 
    --secondary-color-brown: #8B7F76; /* 線段 */
-   --secondary-color-black: #333333; /* 文字 */
+   --secondary-color-black: #333; /* 文字 */
+   --secondary-color-gray: #666; /* 文字 */
 
    --other-color-white:#fff; /* 白色 */
    --other-color-gray10:#F4F4F4; /* 背景色-淺灰 */
@@ -68,8 +69,8 @@ header .logo{ max-width: 146px; height: 85px; background: url(../images/header/l
 .main-flex .section-right{ max-width: calc(100% - 345px);}
 
 .info-box > img{ }
-.info-box > h1{ width: 100%; text-align: center; font-size: 25px;}
-.info-box > span{ display: block; width: 100%; text-align: center; font-size: 15px;}
+.info-box > h1{ width: 100%; text-align: center; font-size: 25px; color: var(--primary-color-brown);}
+.info-box > span{ display: block; width: 100%; text-align: center; font-size: 15px; color: var(--secondary-color-gray);}
 
 
 /*                       
