@@ -102,7 +102,7 @@ header nav{ display: none;}
 .skills-box ul{ display: flex; flex-wrap: wrap;}
 .skills-box ul li{ margin: 0 10px 10px 0; background-color:var(--other-color-white); line-height: 34px; color:var(--secondary-color-black); padding: 0 15px 0 12px; border-radius: 34px;}
 .skills-box ul li span{ display: block; background-repeat: no-repeat; background-position: left center; background-size: 24px;}
-.skills-box ul li span.s-figma{ background-image: url(../images/skills/icon-figma.svg); background-size: 16px; padding-left: 30px;}
+.skills-box ul li span.s-figma{ background-image: url(../images/skills/icon-figma.svg); background-size: 16px; background-position: 5px; padding-left: 30px;}
 .skills-box ul li span.s-xd{ background-image: url(../images/skills/icon-xd.svg); padding-left: 30px;}
 .skills-box ul li span.s-sketch{ background-image: url(../images/skills/icon-sketch.svg); padding-left: 30px;}
 .skills-box ul li span.s-canva{ background-image: url(../images/skills/icon-canva.svg); padding-left: 30px;}
@@ -117,7 +117,7 @@ header nav{ display: none;}
 .skills-box ul li span.s-gitlab{ background-image: url(../images/skills/icon-gitlab.svg); padding-left: 30px;}
 .skills-box ul li span.s-github{ background-image: url(../images/skills/icon-github.svg); padding-left: 30px;}
 .skills-box ul li span.s-git{ background-image: url(../images/skills/icon-git.svg); padding-left: 30px;}
-.skills-box ul li span.s-sass{ background-image: url(../images/skills/icon-sass.svg); background-size: auto 22px;  padding-left: 30px;}
+.skills-box ul li span.s-sass{ background-image: url(../images/skills/icon-sass.svg); background-size: auto 22px;  padding-left: 38px;}
 .skills-box ul li span.s-axure{ background-image: url(../images/skills/icon-axure.png); padding-left: 30px;}
 .skills-box ul li span.s-gpt{ background-image: url(../images/skills/icon-gpt.png); padding-left: 30px;}
 .skills-box ul li span.s-mjy{ background-image: url(../images/skills/icon-mj.png); padding-left: 30px;}
