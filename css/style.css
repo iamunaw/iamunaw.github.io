@@ -72,8 +72,8 @@ table {
 .mr-b10{ margin-bottom: 10px;}
 
 body,html{ background-color: var(--other-color-gray10); font-size: 13px; line-height: 1.5;  font-family: "HunInn","Noto Sans TC", serif;}
-header{ max-width:345px; background-color: var(--other-color-gray30);}
-header .logo,header .logo a{ max-width: 146px; height: 85px; margin: 0 auto;}
+header{ max-width:345px; background-color: var(--other-color-gray30); padding: 15px 0;}
+header .logo,header .logo a{ display: block; max-width: 146px; height: 85px; margin: 0 auto;}
 header .logo a{ background: url(../images/header/logo.svg); text-indent: -9999px;}
 header nav{ display: none;}
 
@@ -82,7 +82,7 @@ header nav{ display: none;}
 .main-flex .section-right{ max-width: calc(100% - 345px);}
 
 
-.info-box > img{ display: block; width: 165px; height: 165px; border: 7px; border-radius: 165px; overflow: hidden; margin: 0 auto;}
+.info-box > img{ display: block; width: 165px; height: 165px; border: 7px solid var(--other-color-gray30); border-radius: 165px; overflow: hidden; margin: 0 auto;}
 .info-box > h1{ width: 100%; text-align: center; font-size: 25px; color: var(--primary-color-brown);}
 .info-box > span{ display: block; width: 100%; text-align: center; font-size: 15px; color: var(--secondary-color-gray);}
 
