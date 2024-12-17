@@ -104,7 +104,13 @@ header nav{ display: none;}
 .experience-list{ display: flex; flex-wrap: nowrap;}
 .experience-list .experience-left{ width: 125px;}
 .experience-list .experience-right{ width: calc(100% - 125px);}
-.experience-01 h3{ font-size: 15px; color: var(--primary-color-brown); background: url(../images/office/icon-ewebs.svg) left center no-repeat; background-size: 25px; padding-left: 35px;}
+.experience-list h3{ font-size: 15px; color: var(--primary-color-brown);}
+.experience-list .experience-left > span{ display: flex; align-items: center;}
+.experience-list .experience-left > span small{ display: inline-block; padding: 0 5px; font-size: 11px; color:var(--secondary-color-gray);}
+
+.experience-01 h3{ background: url(../images/office/icon-ewebs.svg) left center no-repeat; background-size: 25px; padding-left: 35px;}
+.experience-02 h3{ background: url(../images/office/icon-sh.svg) left center no-repeat; background-size: 25px; padding-left: 35px;}
+
 
 
 /* 右側-技能 */
