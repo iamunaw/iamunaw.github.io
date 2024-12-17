@@ -72,13 +72,13 @@ table {
 .mr-b10{ margin-bottom: 10px;}
 
 body,html{ background-color: var(--other-color-gray10); font-size: 13px; line-height: 1.5;  font-family: "HunInn","Noto Sans TC", serif;}
-header{ max-width:345px; background-color: var(--other-color-gray30); padding: 15px 0; position: fixed;}
+header{ max-width:345px; background-color: var(--other-color-gray30); padding: 15px 0; position: fixed; z-index: 10;}
 header .logo,header .logo a{ display: block; max-width: 146px; height: 85px; margin: 0 auto;}
 header .logo a{ background: url(../images/header/logo.svg); text-indent: -9999px;}
 header nav{ display: none;}
 
 .main-flex{ display: flex;}
-.main-flex .section-left{ position: relative; max-width: 295px; height: 100vh; margin-top: 115px; padding: 20px 25px; background: url(../images/header/bg.svg) var(--other-color-gray30) left top repeat-x;}
+.main-flex .section-left{ position: fixed; z-index: 1; max-width: 295px; height: 100vh; margin-top: 115px; padding: 20px 25px; background: url(../images/header/bg.svg) var(--other-color-gray30) left top repeat-x;}
 .main-flex .section-right{ max-width: calc(100% - 345px); margin-left: 380px;}
 
 
