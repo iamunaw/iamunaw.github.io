@@ -100,7 +100,7 @@ header nav{ display: none;}
 .contact-box ul li a{ color: var(--secondary-color-black); color: var(--secondary-color-black); line-height: 24px;}
 
 .skills-box ul{ display: flex; flex-wrap: wrap;}
-.skills-box ul li{ margin: 0 10px 10px 0; background-color:var(--other-color-white); line-height: 34px; color:var(--secondary-color-black); padding: 0 10px 0 8px; border-radius: 34px;}
+.skills-box ul li{ margin: 0 10px 10px 0; background-color:var(--other-color-white); line-height: 34px; color:var(--secondary-color-black); padding: 0 15px 0 12px; border-radius: 34px;}
 .skills-box ul li span{ display: block; background-repeat: no-repeat; background-position: left center; background-size: auto 24px;}
 .skills-box ul li span.s-figma{ background-image: url(../images/skills/icon-figma.svg); padding-left: 30px;}
 .skills-box ul li span.s-xd{ background-image: url(../images/skills/icon-xd.svg); padding-left: 30px;}
