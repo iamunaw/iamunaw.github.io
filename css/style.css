@@ -70,10 +70,10 @@ table {
 }
 
 .mr-b10{ margin-bottom: 10px;}
-
 body,html{ background-color: var(--other-color-gray10); font-size: 13px; line-height: 1.5;  font-family: "HunInn","Noto Sans TC", serif;}
-header{ max-width:345px; background-color: var(--other-color-gray30); padding: 15px 0; position: fixed; z-index: 10;}
-header .logo,header .logo a{ display: block; max-width: 146px; height: 85px; margin: 0 auto;}
+
+header{ width:345px; height: 85px; background-color: var(--other-color-gray30); padding: 15px 0; position: fixed; z-index: 10;}
+header .logo,header .logo a{ display: block; width: 146px; height: 85px; margin: 0 auto;}
 header .logo a{ background: url(../images/header/logo.svg); text-indent: -9999px;}
 header nav{ display: none;}
 
