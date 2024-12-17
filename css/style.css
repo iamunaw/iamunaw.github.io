@@ -102,6 +102,8 @@ header nav{ display: none;}
 
 /* 右側-經歷 */
 .experience-list{ display: flex; flex-wrap: nowrap;}
+.experience-list .experience-left{ width: 125px;}
+.experience-list .experience-right{ width: calc(100% - 125px);}
 .experience-01 h3{ font-size: 15px; color: var(--primary-color-brown); background: url(../images/office/icon-ewebs.svg) left center no-repeat; background-size: 25px; padding-left: 35px;}
 
 
