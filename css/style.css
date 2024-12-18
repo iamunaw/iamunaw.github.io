@@ -149,13 +149,15 @@ header nav{ display: none;}
 .education-box .box-list,
 .certification-box .box-list{ display: flex; flex-wrap: nowrap;}
 .education-box .box-list .box-left,
-.certification-box .box-list .box-left{ width: 135px; padding-right: 20px;}
+.certification-box .box-list .box-left{ width: 145px; padding-right: 15px;}
+.education-box .box-list .box-right,
+.certification-box .box-list .box-right{ width: calc(100% - 160px); padding-left: 15px;}
 
 .education-01 h3{ background: url(../images/office/icon-just.svg) left center no-repeat; background-size: 25px; padding-left: 35px;}
 .education-02 h3{ background: url(../images/office/icon-ssvs.svg) left center no-repeat; background-size: 25px; padding-left: 35px; line-height: 25px;}
 
-.certification-01 h3{ background: url(../images/office/icon-just.svg) left center no-repeat; background-size: 25px; padding-left: 35px;}
-.certification-02 h3{ background: url(../images/office/icon-ssvs.svg) left center no-repeat; background-size: 25px; padding-left: 35px; line-height: 25px;}
+.certification-01 h3{ background: url(../images/office/icon-coursera.svg) left center no-repeat; background-size: 25px; padding-left: 35px;}
+.certification-02 h3{ background: url(../images/office/icon-ck.svg) left center no-repeat; background-size: 25px; padding-left: 35px; line-height: 25px;}
 
 /* --- 版尾 --- */
 
