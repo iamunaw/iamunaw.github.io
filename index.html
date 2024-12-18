@@ -3,8 +3,18 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <!-- JS -->
     <script src="js/main.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
     <title>Una.W Portfolio｜個人作品集</title>
 </head>
 <body>                
@@ -179,11 +189,28 @@
           <!--專案作品-->
           <div class="content portfolio-box mr-b25">
             <h3 class="content-title">PORTFOLIO</h3>
-            <div class="box-list">
-                <div class="box-left">
-                  
-                </div>
-
+            <div class="box-list owl-carousel">
+               <div class="card"><!--01-->
+                <a href="#"><img src="images/portfolio/portfolio-01.png"></a>
+                 <div>
+                   <h3><a href="#">工研院｜亞灣海陸尋寶遊</a></h3>
+                   <ul><li>#UI</li><li>#UI</li><li>#UI</li><li>#UI</li><li>#UI</li><li>#UI</li></ul>
+                 </div>
+               </div>
+               <div class="card"><!--01-->
+                <a href="#"><img src="images/portfolio/portfolio-02.png"></a>
+                 <div>
+                   <h3><a href="#">參賽｜2023TheF2E立委競選官網</a></h3>
+                   <ul><li>#UI</li><li>#UI</li><li>#UI</li><li>#UI</li><li>#UI</li><li>#UI</li></ul>
+                 </div>
+               </div>
+               <div class="card"><!--01-->
+                <a href="#"><img src="images/portfolio/portfolio-03.png"></a>
+                 <div>
+                   <h3><a href="#">政府專案｜中企處振興五倍券平台</a></h3>
+                   <ul><li>#UI</li><li>#UI</li><li>#UI</li><li>#UI</li><li>#UI</li><li>#UI</li></ul>
+                 </div>
+               </div>
             </div>
           </div>
 
@@ -193,6 +220,32 @@
 
     <!-- *版尾* -->
     <div id="footer"></div>
+
+
+<script>
+  $(document).ready(function () {
+    $('.owl-carousel').owlCarousel({
+      loop: true,               // 是否循環
+      margin: 10,               // 每個項目之間的間距
+      nav: true,                // 是否顯示導航按鈕
+      autoplay: true,           // 自動播放
+      autoplayTimeout: 3000,    // 自動播放間隔時間 (ms)
+      responsive: {             // 響應式設置
+        0: {
+          items: 1,             // 小螢幕顯示 1 個項目
+        },
+        600: {
+          items: 2,             // 中等螢幕顯示 2 個項目
+        },
+        1000: {
+          items: 3,             // 大螢幕顯示 3 個項目
+        }
+      }
+    });
+  });
+</script>
+
+
 </body>
 
 
