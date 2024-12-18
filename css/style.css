@@ -102,8 +102,8 @@ header nav{ display: none;}
 
 /* 右側-經歷 */
 .experience-list{ display: flex; flex-wrap: nowrap;}
-.experience-list .experience-left{ width: 155px;}
-.experience-list .experience-right{ width: calc(100% - 125px); padding-left:28px; border-left: 1px solid var(--secondary-color-brown);}
+.experience-list .experience-left{ width: 135px; padding-right: 20px;}
+.experience-list .experience-right{ width: calc(100% - 155px); padding-left:28px; border-left: 1px solid var(--secondary-color-brown);}
 .experience-list h3{ font-size: 15px; color: var(--primary-color-brown);}
 .experience-list .experience-left > span{ display: flex; align-items: center; justify-content: end;}
 .experience-list .experience-left > span small{ display: inline-block; padding: 0 5px; font-size: 11px; color:var(--secondary-color-gray);}
