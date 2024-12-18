@@ -153,9 +153,9 @@ header nav{ display: none;}
 .education-box .box-list,
 .certification-box .box-list{ display: flex; flex-wrap: nowrap;}
 .education-box .box-list .box-left,
-.certification-box .box-list .box-left{ width: 160px; padding-right: 15px;}
+.certification-box .box-list .box-left{ width: 165px; padding-right: 15px;}
 .education-box .box-list .box-right,
-.certification-box .box-list .box-right{ width: calc(100% - 175px); padding-left: 15px; border-left: 1px solid var(--secondary-color-brown);}
+.certification-box .box-list .box-right{ width: calc(100% - 195px); padding-left: 15px; border-left: 1px solid var(--secondary-color-brown);}
 
 .education-box .box-list h3,
 .certification-box .box-list h3{ font-size: 15px; color: var(--primary-color-brown);}
@@ -164,10 +164,9 @@ header nav{ display: none;}
 .certification-box .box-list .box-right ul li:first-child{ font-size: 14px; color: var(--primary-color-brown);}
 
 .education-box .box-list .box-left > span,
-.certification-box .box-list .box-left > span{ display: flex; align-items: center; justify-content: end;}
+.certification-box .box-list .box-left > span{ display: flex; align-items: center; justify-content: end; font-size: 10px; color: var(--secondary-color-gray);}
 
 .education-box .box-list .box-left > span small,
-.certification-box .box-list .box-left > span,
 .certification-box .box-list .box-left > span small{ display: inline-block;  padding: 0 5px; font-size: 10px; color: var(--secondary-color-gray);}
 
 .certification-box .box-list a,
