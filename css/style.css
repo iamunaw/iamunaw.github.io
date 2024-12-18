@@ -113,7 +113,7 @@ header nav{ display: none;}
 .experience-box .box-list .box-left > span{ display: flex; align-items: center; justify-content: end; gap: 12px;}
 .experience-box .box-list .box-left > span small{ display: inline-block; padding: 0 5px; font-size: 10px; color:var(--secondary-color-gray); background-color: var(--other-color-white); border-radius: 20px; padding: 0 5px;}
 .experience-box .box-list .box-left > span small:nth-child(1){ position: relative;}
-.experience-box .box-list .box-left > span small:nth-child(1):after{ display: block; width: 12px; height: 1px; background-color: var(--other-color-white); position: absolute; right: -12px; top: 10px;}
+.experience-box .box-list .box-left > span small:nth-child(1):after{ display: block; content: ''; width: 12px; height: 1px; background-color: var(--other-color-white); position: absolute; right: -12px; top: 10px;}
 
 .experience-01 h3,
 .experience-02 h3{ margin-bottom: 5px;}
