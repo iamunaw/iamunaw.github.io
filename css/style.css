@@ -143,7 +143,7 @@ header nav{ display: none;}
 .skills-box ul li span.s-notion{ background-image: url(../images/skills/icon-notion.png); padding-left: 30px;}
 
 /* 右側-學歷＆證書 */
-.content-flex{ display: flex; gap: 20px;}
+.content-flex{ display: flex; gap: 30px;}
 .content-flex > div{  width: 50%;}
 
 .education-box .box-list,
@@ -152,15 +152,18 @@ header nav{ display: none;}
 .education-box .box-list,
 .certification-box .box-list{ display: flex; flex-wrap: nowrap;}
 .education-box .box-list .box-left,
-.certification-box .box-list .box-left{ width: 145px; padding-right: 15px;}
+.certification-box .box-list .box-left{ width: 175px; padding-right: 15px;}
 .education-box .box-list .box-right,
-.certification-box .box-list .box-right{ width: calc(100% - 160px); padding-left: 15px;}
+.certification-box .box-list .box-right{ width: calc(100% - 180px); padding-left: 15px;}
 
 .education-box .box-list h3,
 .certification-box .box-list h3{ font-size: 15px; color: var(--primary-color-brown);}
 
 .education-box .box-list .box-right ul li:first-child,
-.certification-bo .box-list .box-right ul li:first-child{ font-size: 14px; color: var(--primary-color-brown);}
+.certification-box .box-list .box-right ul li:first-child{ font-size: 14px; color: var(--primary-color-brown);}
+
+.education-box .box-list .box-left > span,
+.certification-box .box-list .box-left > span{ display: flex; align-items: center; justify-content: end;}
 
 .certification-box .box-list a,
 .certification-box .box-list a:hover{ color: var(--secondary-color-black);}
