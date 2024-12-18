@@ -166,7 +166,8 @@ header nav{ display: none;}
 .education-box .box-list .box-left > span,
 .certification-box .box-list .box-left > span{ display: flex; align-items: center; justify-content: end;}
 
-.experience-box .box-list .box-left > span small,
+.education-box .box-list .box-left > span small,
+.certification-box .box-list .box-left > span,
 .certification-box .box-list .box-left > span small{ display: inline-block;  padding: 0 5px; font-size: 10px; color: var(--secondary-color-gray);}
 
 .certification-box .box-list a,
