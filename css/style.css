@@ -54,6 +54,10 @@ table {
     border-collapse: collapse;
     border-spacing: 0;
 }
+::selection {
+	background: var(--primary-color-brown);
+	color: #fff;
+}
 
 /* ====== 宣告變數 & 規範定義 ====== */
 :root {
