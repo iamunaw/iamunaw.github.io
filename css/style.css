@@ -162,6 +162,9 @@ header nav{ display: none;}
 .education-box .box-list .box-right ul li:first-child,
 .certification-bo .box-list .box-right ul li:first-child{ font-size: 14px; color: var(--primary-color-brown);}
 
+.certification-box .box-list a,
+.certification-box .box-list a:hover{ color: var(--secondary-color-black);}
+
 .education-01 h3{ background: url(../images/office/icon-just.svg) left center no-repeat; background-size: 24px; padding-left: 35px; line-height: 24px;}
 .education-02 h3{ background: url(../images/office/icon-ssvs.svg) left center no-repeat; background-size: 24px; padding-left: 35px; line-height: 24px;}
 
