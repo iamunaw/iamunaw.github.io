@@ -142,7 +142,9 @@ header nav{ display: none;}
 .skills-box ul li span.s-mjy{ background-image: url(../images/skills/icon-mj.png); padding-left: 30px;}
 .skills-box ul li span.s-notion{ background-image: url(../images/skills/icon-notion.png); padding-left: 30px;}
 
-
+/* 右側-學歷＆證書 */
+.content-flex{ display: flex; gap: 20px;}
+.content-flex > div{  width: 50%;}
 
 /* --- 版尾 --- */
 
