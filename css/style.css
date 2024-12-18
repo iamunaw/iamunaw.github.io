@@ -108,8 +108,8 @@ header nav{ display: none;}
 .experience-box .box-list .box-left > span{ display: flex; align-items: center; justify-content: end;}
 .experience-box .box-list .box-left > span small{ display: inline-block; padding: 0 5px; font-size: 10px; color:var(--secondary-color-gray);}
 
-.experience-01 h3{ background: url(../images/office/icon-ewebs.svg) left center no-repeat; background-size: 25px 20px; padding-left: 35px; line-height: 20px;}
-.experience-02 h3{ background: url(../images/office/icon-sh.svg) left center no-repeat; background-size: 20px; padding-left: 35px; line-height: 20px;}
+.experience-01 h3{ background: url(../images/office/icon-ewebs.svg) left center no-repeat; background-size: 25px 20px; padding-left: 35px; line-height: 24px;}
+.experience-02 h3{ background: url(../images/office/icon-sh.svg) left center no-repeat; background-size: 24px; padding-left: 35px; line-height: 24px;}
 
 .experience-box .box-list .box-right ul{ display: flex; flex-wrap: nowrap; align-items: flex-start; margin-bottom: 12px; position: relative; padding-top: 3px;}
 .experience-box .box-list .box-right ul::before{ display: block; content: ''; width: 11px; height: 11px; background: url(../images/office/icon-point.svg) center no-repeat; background-size: 11px; left: -31px; top:8px; position: absolute;}
@@ -153,11 +153,11 @@ header nav{ display: none;}
 .education-box .box-list .box-right,
 .certification-box .box-list .box-right{ width: calc(100% - 160px); padding-left: 15px;}
 
-.education-01 h3{ background: url(../images/office/icon-just.svg) left center no-repeat; background-size: 20px; padding-left: 35px;}
-.education-02 h3{ background: url(../images/office/icon-ssvs.svg) left center no-repeat; background-size: 20px; padding-left: 35px; line-height: 20px;}
+.education-01 h3{ background: url(../images/office/icon-just.svg) left center no-repeat; background-size: 24px; padding-left: 35px;}
+.education-02 h3{ background: url(../images/office/icon-ssvs.svg) left center no-repeat; background-size: 24px; padding-left: 35px; line-height: 24px;}
 
-.certification-01 h3{ background: url(../images/office/icon-coursera.svg) left center no-repeat; background-size: 20px; padding-left: 35px;}
-.certification-02 h3{ background: url(../images/office/icon-ck.svg) left center no-repeat; background-size: 20px; padding-left: 35px; line-height: 20px;}
+.certification-01 h3{ background: url(../images/office/icon-coursera.svg) left center no-repeat; background-size: 24px; padding-left: 35px;}
+.certification-02 h3{ background: url(../images/office/icon-ck.svg) left center no-repeat; background-size: 24px; padding-left: 35px; line-height: 24px;}
 
 /* --- 版尾 --- */
 
