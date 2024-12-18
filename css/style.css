@@ -106,8 +106,8 @@ header nav{ display: none;}
 
 /* 右側-經歷 */
 .experience-box .box-list{ display: flex; flex-wrap: nowrap;}
-.experience-box .box-list .box-left{ width: 125px; padding-right: 20px;}
-.experience-box .box-list .box-right{ width: calc(100% - 165px); padding-left:20px; border-left: 1px solid var(--secondary-color-brown);}
+.experience-box .box-list .box-left{ width: 130px; padding-right: 20px;}
+.experience-box .box-list .box-right{ width: calc(100% - 170px); padding-left:20px; border-left: 1px solid var(--secondary-color-brown);}
 .experience-box:nth-child(2) .box-list .box-right{ border-left: 0;}
 .experience-box .box-list h3{ font-size: 15px; color: var(--primary-color-brown);}
 .experience-box .box-list .box-left > span{ display: flex; align-items: center; justify-content: end; gap: 12px;}
@@ -121,7 +121,7 @@ header nav{ display: none;}
 .experience-02 h3{ background: url(../images/office/icon-sh.svg) left center no-repeat; background-size: 22px; padding-left: 35px; line-height: 24px;}
 
 .experience-box .box-list .box-right ul{ display: flex; flex-wrap: nowrap; align-items: flex-start; margin-bottom: 12px; position: relative; padding-top: 3px;}
-.experience-box .box-list .box-right ul::before{ display: block; content: ''; width: 11px; height: 11px; background: url(../images/office/icon-point.svg) center no-repeat; background-size: 11px; left: -31px; top:8px; position: absolute;}
+.experience-box .box-list .box-right ul::before{ display: block; content: ''; width: 11px; height: 11px; background: url(../images/office/icon-point.svg) center no-repeat; background-size: 11px; left: -26px; top:8px; position: absolute;}
 .experience-box .box-list .box-right ul li:first-child{ width: 75px; font-size: 14px; color: var(--primary-color-brown);}
 .experience-box .box-list .box-right ul li:last-child{ width: calc(100% - 75px); font-size: 13px; color: var(--secondary-color-black);}
 
