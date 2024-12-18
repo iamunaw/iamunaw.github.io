@@ -104,6 +104,7 @@ header nav{ display: none;}
 .experience-box .box-list{ display: flex; flex-wrap: nowrap;}
 .experience-box .box-list .box-left{ width: 135px; padding-right: 20px;}
 .experience-box .box-list .box-right{ width: calc(100% - 155px); padding-left:25px; border-left: 1px solid var(--secondary-color-brown);}
+.experience-box:nth-child(2) .box-list .box-right{ border-left: 0;}
 .experience-box .box-list h3{ font-size: 15px; color: var(--primary-color-brown);}
 .experience-box .box-list .box-left > span{ display: flex; align-items: center; justify-content: end;}
 .experience-box .box-list .box-left > span small{ display: inline-block; padding: 0 5px; font-size: 10px; color:var(--secondary-color-gray);}
