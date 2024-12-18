@@ -153,11 +153,11 @@ header nav{ display: none;}
 .education-box .box-list .box-right,
 .certification-box .box-list .box-right{ width: calc(100% - 160px); padding-left: 15px;}
 
-.education-01 h3{ background: url(../images/office/icon-just.svg) left center no-repeat; background-size: 25px; padding-left: 35px;}
-.education-02 h3{ background: url(../images/office/icon-ssvs.svg) left center no-repeat; background-size: 25px; padding-left: 35px; line-height: 25px;}
+.education-01 h3{ background: url(../images/office/icon-just.svg) left center no-repeat; background-size: 20px; padding-left: 35px;}
+.education-02 h3{ background: url(../images/office/icon-ssvs.svg) left center no-repeat; background-size: 20px; padding-left: 35px; line-height: 20px;}
 
-.certification-01 h3{ background: url(../images/office/icon-coursera.svg) left center no-repeat; background-size: 25px; padding-left: 35px;}
-.certification-02 h3{ background: url(../images/office/icon-ck.svg) left center no-repeat; background-size: 25px; padding-left: 35px; line-height: 25px;}
+.certification-01 h3{ background: url(../images/office/icon-coursera.svg) left center no-repeat; background-size: 20px; padding-left: 35px;}
+.certification-02 h3{ background: url(../images/office/icon-ck.svg) left center no-repeat; background-size: 20px; padding-left: 35px; line-height: 20px;}
 
 /* --- 版尾 --- */
 
