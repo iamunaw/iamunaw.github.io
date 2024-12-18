@@ -147,16 +147,25 @@ header nav{ display: none;}
 .content-flex > div{  width: 50%;}
 
 .education-box .box-list,
+.certification-box .box-list{ margin-bottom: 12px;}
+
+.education-box .box-list,
 .certification-box .box-list{ display: flex; flex-wrap: nowrap;}
 .education-box .box-list .box-left,
 .certification-box .box-list .box-left{ width: 145px; padding-right: 15px;}
 .education-box .box-list .box-right,
 .certification-box .box-list .box-right{ width: calc(100% - 160px); padding-left: 15px;}
 
-.education-01 h3{ background: url(../images/office/icon-just.svg) left center no-repeat; background-size: 24px; padding-left: 35px;}
+.education-box .box-list h3,
+.certification-box .box-list h3{ font-size: 15px; color: var(--primary-color-brown);}
+
+.education-box .box-list .box-right ul li:first-child,
+.certification-bo .box-list .box-right ul li:first-child{ font-size: 14px; color: var(--primary-color-brown);}
+
+.education-01 h3{ background: url(../images/office/icon-just.svg) left center no-repeat; background-size: 24px; padding-left: 35px; line-height: 24px;}
 .education-02 h3{ background: url(../images/office/icon-ssvs.svg) left center no-repeat; background-size: 24px; padding-left: 35px; line-height: 24px;}
 
-.certification-01 h3{ background: url(../images/office/icon-coursera.svg) left center no-repeat; background-size: 24px; padding-left: 35px;}
+.certification-01 h3{ background: url(../images/office/icon-coursera.svg) left center no-repeat; background-size: 24px; padding-left: 35px; line-height: 24px;}
 .certification-02 h3{ background: url(../images/office/icon-ck.svg) left center no-repeat; background-size: 24px; padding-left: 35px; line-height: 24px;}
 
 /* --- 版尾 --- */
