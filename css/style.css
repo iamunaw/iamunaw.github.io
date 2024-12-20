@@ -189,6 +189,11 @@ header nav{ display: none;}
 .certification-01 h3{ background: url(../images/office/icon-coursera.svg) left center no-repeat; background-size: 24px; padding-left: 35px; line-height: 24px;}
 .certification-02 h3{ background: url(../images/office/icon-ck.svg) left center no-repeat; background-size: 24px; padding-left: 35px; line-height: 24px;}
 
+
+/* 專案作品 */
+.portfolio-box{ max-width: calc(100% - 345px); overflow-x: hidden;}
+
+
 /* --- 版尾 --- */
 
 
