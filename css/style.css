@@ -84,7 +84,7 @@ body,html{ background-color: var(--other-color-gray10); font-size: 13px; line-he
 .content-title{ display: inline-block; width: auto; padding-bottom: 6px; margin-bottom:10px; font-size: 16px; line-height: 1.5; color:var(--primary-color-brown); border-bottom:2px solid var(--other-color-white);}
 
 /* --- 版頭 --- */
-header{ width: 100%; max-width:345px; height: 85px; background-color: var(--other-color-gray30); padding: 15px 0; position: fixed; top: 0; z-index: 10;}
+header{ width: 100%; max-width:345px; height: auto; background-color: var(--other-color-gray30); padding: 15px 0; position: fixed; top: 0; z-index: 10;}
 header .logo,header .logo a{ display: block; width: 146px; height: 85px; margin: 0 auto;}
 header .logo a{ background: url(../images/header/logo.svg); text-indent: -9999px;}
 header nav{ display: none;}
@@ -229,8 +229,9 @@ footer{ width: calc(100% - 405px); margin-left: 345px; padding: 5px 30px 5px 30p
 
 @media screen and (max-width: 480px) {
     /* 版頭 */
-    header .logo a{ background: url(../images/header/logo-s.svg);}
-
+    header .logo, header .logo a{ width: 144px; height: 35px;}
+    header .logo a{ background: url(../images/header/logo-s.svg) center no-repeat;}
+    .main-flex .section-left{ padding-top: 65px;}
     /* 經歷 */
     .experience-box .box-list .box-left{ display: flex; width: 100%; padding-right: 20px; align-items: center; justify-content: space-between;}
     .experience-box .box-list{ display: block;}
