@@ -138,13 +138,13 @@ header.header-s a{ width: 114px; height: 25px; margin: 0 30px 0 0; background: u
 .skills-box ul li span.s-figma{ background-image: url(../images/skills/icon-figma.svg); background-size: 16px; background-position: 5px; padding-left: 30px;}
 .skills-box ul li span.s-xd{ background-image: url(../images/skills/icon-xd.svg); padding-left: 30px;}
 .skills-box ul li span.s-sketch{ background-image: url(../images/skills/icon-sketch.svg); padding-left: 30px;}
-.skills-box ul li span.s-canva{ background-image: url(../images/skills/icon-canva.svg); padding-left: 30px;}
+.skills-box ul li span.s-canva{ background-image: url(../images/skills/icon-canva.png); padding-left: 30px;}
 .skills-box ul li span.s-zeplin{ background-image: url(../images/skills/icon-zeplin.svg); padding-left: 30px;}
-.skills-box ul li span.s-lottie{ background-image: url(../images/skills/icon-lottie.svg); padding-left: 30px;}
+.skills-box ul li span.s-lottie{ background-image: url(../images/skills/icon-lottie.png); padding-left: 30px;}
 .skills-box ul li span.s-vsc{ background-image: url(../images/skills/icon-vscode.svg); padding-left: 30px;}
 .skills-box ul li span.s-bsp{ background-image: url(../images/skills/icon-bootstrap.svg); padding-left: 30px;}
 .skills-box ul li span.s-twcss{ background-image: url(../images/skills/icon-tailwindcss.svg); padding-left: 30px;}
-.skills-box ul li span.s-html{ background-image: url(../images/skills/icon-html5.svg); padding-left: 30px;}
+.skills-box ul li span.s-html{ background-image: url(../images/skills/icon-html5.png); padding-left: 30px;}
 .skills-box ul li span.s-jqy{ background-image: url(../images/skills/icon-jquery.svg); padding-left: 30px;}
 .skills-box ul li span.s-vue{ background-image: url(../images/skills/icon-vue.svg); padding-left: 30px;}
 .skills-box ul li span.s-gitlab{ background-image: url(../images/skills/icon-gitlab.svg); padding-left: 30px;}
