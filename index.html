@@ -6,14 +6,20 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 
     <!-- JS -->
     <script src="js/main.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <script>
+      AOS.init();
+    </script>
 
     <title>Una.W Portfolio｜個人作品集</title>
 </head>
@@ -46,7 +52,7 @@
         <!-- *主內容區-右側* -->
         <section class="section-right">
           <!--工作經歷-->
-          <div class="content experience-box mr-b25">
+          <div class="content experience-box mr-b25" data-aos="fade-up" data-aos-duration="3000">
             <h3 class="content-title">EXPERIENCE</h3>
             <div class="box-list experience-01"><!--{{*公司-和盟*}}--> 
                 <div class="box-left">
@@ -87,7 +93,7 @@
           </div>
 
           <!--相關技能-->
-          <div class="content skills-box mr-b25">
+          <div class="content skills-box mr-b25" data-aos="fade-up" data-aos-duration="3000">
             <h3 class="content-title">SKILLS</h3>
             <ul>
               <li><span class="s-figma">Figma</span></li>
@@ -116,7 +122,7 @@
           <!--學歷＆證書-->
           <div class="content-flex">
             <!--學歷-->
-            <div class="content education-box mr-b25">
+            <div class="content education-box mr-b25" data-aos="fade-up" data-aos-duration="3000">
               <h3 class="content-title">EDUCATION</h3>
               <div class="box-list education-01"><!--{{*學校-景文*}}--> 
                   <div class="box-left">
@@ -144,7 +150,7 @@
               </div>
             </div>
             <!--證書-->
-            <div class="content certification-box mr-b25">
+            <div class="content certification-box mr-b25" data-aos="fade-up" data-aos-duration="3000">
               <h3 class="content-title">CERTIFICATION</h3>
               <div class="box-list certification-01"><!--{{*證書-Google*}}--> 
                   <div class="box-left">
@@ -187,7 +193,7 @@
           </div>
 
           <!--專案作品-->
-          <div class="content portfolio-box mr-b25">
+          <div class="content portfolio-box" data-aos="fade-up" data-aos-duration="3000">
             <h3 class="content-title">PORTFOLIO</h3>
             <div class="box-list">
               <div class="owl-carousel">
