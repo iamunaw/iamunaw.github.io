@@ -229,7 +229,7 @@ footer{ width: calc(100% - 405px); margin-left: 345px; padding: 5px 30px 5px 30p
 
 @media screen and (max-width: 480px) {
     /* 版頭 */
-    header{ background-color: none; transition: all .8s;}
+    header{ background-color:var(--other-color-white); transition: all .8s;}
     header .logo, header .logo a{ width: 200px; height: 55px; transition: all .8s;}
     header .logo a{ background: url(../images/header/logo-s.svg) center no-repeat; background-size: 200px; transition: all .8s;}
 
