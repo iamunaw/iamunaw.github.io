@@ -229,9 +229,16 @@ footer{ width: calc(100% - 405px); margin-left: 345px; padding: 5px 30px 5px 30p
 
 @media screen and (max-width: 480px) {
     /* 版頭 */
-    header .logo, header .logo a{ width: 144px; height: 35px;}
-    header .logo a{ background: url(../images/header/logo-s.svg) center no-repeat;}
+    header{ background-color: none; transition: all .8s;}
+    header .logo, header .logo a{ width: 200px; height: 55px; transition: all .8s;}
+    header .logo a{ background: url(../images/header/logo-s.svg) center no-repeat; background-size: 200px; transition: all .8s;}
+
+    .header-m{ background-color: var(--other-color-gray30); transition: all .8s;}
+    .header-m .logo, .header-m .logo a{ width: 144px; height: 35px; transition: all .8s;}
+    .header-m .logo a{ background: url(../images/header/logo-s.svg) center no-repeat; background-size: 144; transition: all .8s;}
+
     .main-flex .section-left{ margin-top: 65px;}
+
     /* 經歷 */
     .experience-box .box-list .box-left{ display: flex; width: 100%; padding-right: 20px; align-items: center; justify-content: space-between;}
     .experience-box .box-list{ display: block;}
