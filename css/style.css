@@ -207,6 +207,10 @@ header.header-s a{ width: 114px; height: 25px; margin: 0 30px 0 0; background: u
 footer{ width: calc(100% - 405px); margin-left: 345px; padding: 5px 30px 5px 30px; font-size: 11px; color: #666;}
 
 
+@media screen and (max-width: 320px) {
+    .lightbox_Product_range .box .product_range_list li { padding-left: 0.2em; }
+}
+
 
 /*                       
 ___  ___  ________   ________      ___       __      
