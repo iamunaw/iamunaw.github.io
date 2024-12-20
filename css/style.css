@@ -88,9 +88,9 @@ header{ width: 100%; max-width:345px; height: 85px; background-color: var(--othe
 header .logo,header .logo a{ display: block; width: 146px; height: 85px; margin: 0 auto;}
 header .logo a{ background: url(../images/header/logo.svg); text-indent: -9999px;}
 header nav{ display: none;}
-
+/*
 header.header-s{ max-width: 100%; height: 60px;}
-header.header-s a{ width: 114px; height: 25px; margin: 0 30px 0 0; background: url(../images/header/logo-s.svg); text-indent: -9999px;}
+header.header-s a{ width: 114px; height: 25px; margin: 0 30px 0 0; background: url(../images/header/logo-s.svg); text-indent: -9999px;}*/
 
 /* --- 內容 --- */
 .main-flex{ display: flex;}
