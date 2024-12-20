@@ -234,7 +234,7 @@ footer{ width: calc(100% - 405px); margin-left: 345px; padding: 5px 30px 5px 30p
     .experience-box .box-list .box-right{ width: calc(100% - 31px); margin-left: 11px;}
     .experience-box .box-list .box-right ul li:first-child{ padding-left: 3px;}
     /* 技能 */
-
+    .skills-box ul li{ margin: 0 5px 5px 0;}
     /* 學歷 */
     .education-box .box-list, .certification-box .box-list{ display: block;}
     .education-box .box-list .box-right, .certification-box .box-list .box-right{ margin-top: 5px; width: calc(100% - 35px); padding-left: 15px; border-left: 0; margin-left: 20px;}
