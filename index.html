@@ -226,6 +226,23 @@
 
 
 <script>
+  //版頭改變
+  document.addEventListener('DOMContentLoaded', () => {
+    const header = document.querySelector('header');
+
+    if (header) {
+        window.addEventListener('scroll', () => {
+            if (window.scrollY > 115) {
+                header.classList.add('header-s');
+            } else {
+                header.classList.remove('header-s');
+            }
+        });
+    } else {
+        console.warn('Header element not found.');
+    }
+  });
+
   //首頁-專案作品輪播
   $(document).ready(function () {
     $('.owl-carousel').owlCarousel({
