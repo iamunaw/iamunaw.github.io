@@ -195,6 +195,8 @@ header.header-s a{ width: 114px; height: 25px; margin: 0 30px 0 0; background: u
 .certification-02 h3{ background: url(../images/office/icon-ck.png) left center no-repeat; background-size: 24px; padding-left: 35px; line-height: 24px;}
 
 /* 專案作品 */
+.portfolio-box .content-title{ position: relative;}
+.portfolio-box .content-title span{ position: absolute; left:200px; display: inline-block; padding: 5px 8px; color: var(--other-color-white); background-color: var(--secondary-color-brown); font-size: 12px;}
 .portfolio-box .box-list{ width: 100%; overflow-x: hidden;}
 .portfolio-box .box-list .card{ background-color: var(--other-color-white);}
 .portfolio-box .box-list .card > div{ padding:10px 12px 12px 12px;}
