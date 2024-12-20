@@ -228,14 +228,18 @@ footer{ width: calc(100% - 405px); margin-left: 345px; padding: 5px 30px 5px 30p
 }
 
 @media screen and (max-width: 480px) {
+    /* 經歷 */
     .experience-box .box-list .box-left{ display: flex; width: 100%; padding-right: 20px; align-items: center; justify-content: space-between;}
     .experience-box .box-list{ display: block;}
     .experience-box .box-list .box-right{ width: calc(100% - 31px); margin-left: 11px;}
     .experience-box .box-list .box-right ul li:first-child{ padding-left: 3px;}
-    /*
-    .experience-box .box-list .box-right ul{ display: block;}
-    .experience-box .box-list .box-right ul li:last-child{ width: 100%; font-size: 12px; margin-top: 5px;}
-    .education-box .box-list .box-right ul li:last-child{ font-size: 12px; margin-top: 5px;}*/
+    /* 技能 */
+
+    /* 學歷 */
+    .education-box .box-list, .certification-box .box-list{ display: block;}
+    .education-box .box-list .box-left, .certification-box .box-list .box-left{ width: 100%; display: flex; align-items: center; justify-content: space-between;}
+
+  
 }
 
 
