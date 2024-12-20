@@ -208,6 +208,8 @@ footer{ width: calc(100% - 405px); margin-left: 345px; padding: 5px 30px 5px 30p
 
 
 @media screen and (max-width: 1200px) {
+    .content-flex{ display: block;}
+    .content-flex > div{ width: 100%;}
 
 }
 
@@ -215,6 +217,8 @@ footer{ width: calc(100% - 405px); margin-left: 345px; padding: 5px 30px 5px 30p
     .main-flex{ display: block;}
     .main-flex .section-left{ position: unset; max-width: 100%; height: auto;}
     .main-flex .section-right{ width:calc(100% - 60px); margin-left: 0;}
+    .content-flex{ display: flex;}
+    .content-flex > div{ width: 50%;}
     footer{ width: 100%; text-align: center; padding: 5px 0; margin: 0;}
 }
 
