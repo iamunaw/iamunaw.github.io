@@ -214,6 +214,7 @@ footer{ width: calc(100% - 405px); margin-left: 345px; padding: 5px 30px 5px 30p
 }
 
 @media screen and (max-width: 960px) {
+    header{ width: 100px; }
     .main-flex{ display: block;}
     .main-flex .section-left{ position: unset; max-width: 100%; height: auto;}
     .main-flex .section-right{ width:calc(100% - 60px); margin-left: 0;}
