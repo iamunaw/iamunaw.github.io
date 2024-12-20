@@ -6,23 +6,31 @@
 
     <!-- CSS -->
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- AOS CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
 
     <!-- JS -->
     <script src="js/main.js"></script>
-    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <!-- AOS JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
 
     <script>
-      AOS.init({
-        useClassNames: true,
-        initClassName: false,
-        animatedClassName: 'animated',
-      });
+      document.addEventListener('DOMContentLoaded', () => {
+        AOS.init({
+          offset: 120, // 元素距離 viewport 的觸發距離
+          delay: 200, // 延遲動畫執行的時間 (ms)
+          duration: 600, // 動畫持續時間 (ms)
+          easing: 'ease-in-out', // 動畫效果
+          once: true, // 是否只執行一次
+          mirror: false // 滑回時是否重複動畫
+        });
+      }); 
+      
     </script>
 
     <title>Una.W Portfolio｜個人作品集</title>
