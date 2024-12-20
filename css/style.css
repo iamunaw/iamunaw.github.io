@@ -192,11 +192,11 @@ header nav{ display: none;}
 /* 專案作品 */
 .portfolio-box .box-list{ width: 100%; overflow-x: hidden;}
 .portfolio-box .box-list .card{ background-color: var(--other-color-white);}
-.portfolio-box .box-list .card > div{ padding: 12px;}
-.portfolio-box .box-list .card > div h3 a{ display: block; width: 100%; color: var(--primary-color-brown); font-size:16px;}
+.portfolio-box .box-list .card > div{ padding:10px 12px 12px 12px;}
+.portfolio-box .box-list .card > div h3 a{ display: block; width: 100%; color: var(--primary-color-brown); font-size:16px; text-decoration: none;}
 .portfolio-box .box-list .card > div h3{ margin-bottom: 5px;}
 .portfolio-box .box-list .card > div ul{ display: flex; flex-wrap: wrap;}
-.portfolio-box .box-list .card > div ul li{ display: inline-block; font-size: 11px; padding: 3px 10px; background-color: var(--other-color-gray10); color: var(--secondary-color-brown); font-size: 11px;}
+.portfolio-box .box-list .card > div ul li{ display: inline-block; font-size: 11px; padding: 3px 10px; background-color: var(--other-color-gray10); color: var(--secondary-color-brown); font-size: 11px; margin-right: 6px; margin-bottom: 6px; border-radius: 10px;}
 
 /* --- 版尾 --- */
 
