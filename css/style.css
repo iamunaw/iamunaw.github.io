@@ -111,6 +111,7 @@ header.header-s a{ width: 114px; height: 25px; margin: 0 30px 0 0; background: u
 .experience-box .box-list{ display: flex; flex-wrap: nowrap;}
 .experience-box .box-list .box-left{ width: 130px; padding-right: 20px;}
 .experience-box .box-list .box-right{ width: calc(100% - 170px); padding-left:20px; border-left: 1px solid var(--secondary-color-brown);}
+.experience-box:last-child .box-list .box-right{ border-left-color:var(--other-color-gray10);}
 .experience-box:nth-child(2) .box-list .box-right{ border-left: 0;}
 .experience-box .box-list h3{ font-size: 15px; color: var(--primary-color-brown);}
 .experience-box .box-list .box-left > span{ display: flex; align-items: center; justify-content: end; gap: 12px;}
