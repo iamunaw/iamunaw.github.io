@@ -228,9 +228,11 @@ footer{ width: calc(100% - 405px); margin-left: 345px; padding: 5px 30px 5px 30p
 }
 
 @media screen and (max-width: 480px) {
+    .experience-box .box-list{ display: block;}
+    /*
     .experience-box .box-list .box-right ul{ display: block;}
     .experience-box .box-list .box-right ul li:last-child{ width: 100%; font-size: 12px; margin-top: 5px;}
-    .education-box .box-list .box-right ul li:last-child{ font-size: 12px; margin-top: 5px;}
+    .education-box .box-list .box-right ul li:last-child{ font-size: 12px; margin-top: 5px;}*/
 }
 
 
