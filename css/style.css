@@ -1,15 +1,12 @@
+@charset "UTF-8";
+/* ====== 字體定義 ====== */
 @font-face {
-	font-family: 'HunInn';
-	src: url(https://cdn.jsdelivr.net/gh/marsnow/open-huninn-font@1.1/font/jf-openhuninn.eot); /* IE9 Compat Modes */
-	src: url(https://cdn.jsdelivr.net/gh/marsnow/open-huninn-font@1.1/font/jf-openhuninn.eot?#iefix) format("embedded-opentype"), /* IE6-IE8 */
-	url(https://cdn.jsdelivr.net/gh/marsnow/open-huninn-font@1.1/font/jf-openhuninn.woff) format("woff"), /* Modern Browsers */
-	url(https://cdn.jsdelivr.net/gh/marsnow/open-huninn-font@1.1/font/jf-openhuninn.ttf) format("truetype"), /* Safari, Android, iOS */
-   url(https://cdn.jsdelivr.net/gh/marsnow/open-huninn-font@1.1/font/jf-openhuninn.svg#SealmemoryHeader) format("svg"); /* Legacy iOS */
-   font-weight: normal;
-   font-style: normal;
+  font-family: "HunInn";
+  src: url("https://cdn.jsdelivr.net/gh/marsnow/open-huninn-font@1.1/font/jf-openhuninn.eot"); /* IE9 Compat Modes */
+  src: url("https://cdn.jsdelivr.net/gh/marsnow/open-huninn-font@1.1/font/jf-openhuninn.eot?#iefix") format("embedded-opentype"), url("https://cdn.jsdelivr.net/gh/marsnow/open-huninn-font@1.1/font/jf-openhuninn.woff") format("woff"), url("https://cdn.jsdelivr.net/gh/marsnow/open-huninn-font@1.1/font/jf-openhuninn.ttf") format("truetype"), url("https://cdn.jsdelivr.net/gh/marsnow/open-huninn-font@1.1/font/jf-openhuninn.svg#SealmemoryHeader") format("svg"); /* Legacy iOS */
+  font-weight: normal;
+  font-style: normal;
 }
-/*@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@100..900&display=swap');*/
-
 /* ====== reset ====== */
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
@@ -20,251 +17,93 @@ b, u, i, center,
 dl, dt, dd, ol, ul, li,
 fieldset, form, label, legend,
 table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
 menu, nav, output, ruby, section, summary,
 time, mark, audio, video {
-    margin: 0;
-    padding: 0;
-    border: 0;
-    font-size: 100%;
-    font: inherit;
-    vertical-align: baseline;
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
 }
+
 /* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
+article, aside, details, figcaption, figure,
 footer, header, hgroup, menu, nav, section {
-    display: block;
+  display: block;
 }
+
 body {
-    line-height: 1;
+  line-height: 1;
 }
+
 ol, ul {
-    list-style: none;
+  list-style: none;
 }
+
 blockquote, q {
-    quotes: none;
+  quotes: none;
 }
+
 blockquote:before, blockquote:after,
 q:before, q:after {
-    content: '';
-    content: none;
+  content: "";
+  content: none;
 }
+
 table {
-    border-collapse: collapse;
-    border-spacing: 0;
+  border-collapse: collapse;
+  border-spacing: 0;
 }
+
+::-moz-selection {
+  background: var(--primary-color-brown);
+  color: #fff;
+}
+
 ::selection {
-	background: var(--primary-color-brown);
-	color: #fff;
+  background: var(--primary-color-brown);
+  color: #fff;
 }
 
 /* ====== 宣告變數 & 規範定義 ====== */
 :root {
-/* --- 顏色定義 --- */
-   --primary-color-brown: #5E4F45; /* 標題 */
-
-   --secondary-color-brown: #8B7F76; /* 線段 */
-   --secondary-color-black: #333; /* 文字 */
-   --secondary-color-gray: #666; /* 文字 */
-
-   --other-color-white:#fff; /* 白色 */
-   --other-color-gray10:#F4F4F4; /* 背景色-淺灰 */
-   --other-color-gray30:#E6E6E6; /*背景色-深灰*/
-
+  /* --- 顏色定義 --- */
+  --primary-color-brown: #5E4F45; /* 標題 */
+  --secondary-color-brown: #8B7F76; /* 線段 */
+  --secondary-color-black: #333; /* 文字 */
+  --secondary-color-gray: #666; /* 文字 */
+  --other-color-white:#fff; /* 白色 */
+  --other-color-gray10:#F4F4F4; /* 背景色-淺灰 */
+  --other-color-gray30:#E6E6E6; /*背景色-深灰*/
 }
-/* --- 間距定義 --- */
-.mr-b10{ margin-bottom: 10px;} /* 文案間距 */
-.mr-b25{ margin-bottom: 25px;} /* 元件間距 */
 
+/* --- 間距定義 --- */
+.mr-b10 {
+  margin-bottom: 10px;
+} /* 文案間距 */
+.mr-b25 {
+  margin-bottom: 25px;
+} /* 元件間距 */
 /* ====== 網站資訊 ====== */
-body,html{ background-color: var(--other-color-gray10); font-size: 13px; line-height: 1.5; font-family: "HunInn","Noto Sans TC", serif; color: var(--secondary-color-black);}
+body, html {
+  background-color: var(--other-color-gray10);
+  font-size: 13px;
+  line-height: 1.5;
+  font-family: "HunInn", "Noto Sans TC", serif;
+  color: var(--secondary-color-black);
+}
 
 /* --- 共用 --- */
-.content-title{ display: inline-block; width: auto; padding-bottom: 6px; margin-bottom:10px; font-size: 16px; line-height: 1.5; color:var(--primary-color-brown); border-bottom:2px solid var(--other-color-white);}
-
-/* --- 版頭 --- */
-header{ width: 100%; max-width:345px; height: auto; background-color: var(--other-color-gray30); padding: 15px 0; position: fixed; top: 0; z-index: 10;}
-header .logo,header .logo a{ display: block; width: 146px; height: 85px; margin: 0 auto;}
-header .logo a{ background: url(../images/header/logo.svg); text-indent: -9999px;}
-header nav{ display: none;}
-/*
-header.header-s{ max-width: 100%; height: 60px;}
-header.header-s a{ width: 114px; height: 25px; margin: 0 30px 0 0; background: url(../images/header/logo-s.svg); text-indent: -9999px;}*/
-
-/* --- 內容 --- */
-.main-flex{ display: flex;}
-.main-flex .section-left{ position: fixed; z-index: 1; max-width: 295px; height: 100vh; margin-top: 115px; padding: 20px 25px; background: url(../images/header/bg.svg) var(--other-color-gray30) left top repeat-x;}
-.main-flex .section-right{ width: calc(100% - 405px); margin-left: 345px; padding: 25px 30px 30px 30px;}
-
-/* 左側-介紹 */
-.info-box > img{ display: block; width: 165px; height: 165px; border: 7px solid var(--other-color-gray30); border-radius: 165px; overflow: hidden; margin: 0 auto;}
-.info-box > h1{ width: 100%; text-align: center; font-size: 25px; color: var(--primary-color-brown); letter-spacing: 5px;}
-.info-box > span{ display: block; width: 100%; text-align: center; font-size: 15px; color: var(--secondary-color-gray);}
-
-.contact-box ul li:nth-child(1){ background: url(../images/header/icon-mail.svg) left center no-repeat; background-size: 24px;}
-.contact-box ul li:nth-child(2){ background: url(../images/header/icon-linkedin.svg) left center no-repeat; background-size: 24px;}
-.contact-box ul li{ display: block; width: auto; margin-bottom: 10px; padding-left: 35px;}
-.contact-box ul li a{ color: var(--secondary-color-black); color: var(--secondary-color-black); line-height: 24px;}
-
-/* 右側-經歷 */
-.experience-box .box-list{ display: flex; flex-wrap: nowrap;}
-.experience-box .box-list .box-left{ width: 130px; padding-right: 20px;}
-.experience-box .box-list .box-right{ width: calc(100% - 170px); padding-left:20px; border-left: 1px solid var(--secondary-color-brown); position: relative;}
-.experience-box .experience-02 .box-right{ border-left-color:var(--other-color-gray10);}
-.experience-box .experience-01 .box-right:before{ position: absolute; content:''; display: block; width: 1px; height: 10px; background-color: var(--other-color-gray10); left: -1px;}
-.experience-box .experience-02 .box-right:before{ position: absolute; content:''; display: block; width: 1px; height: 10px; background-color: var(--secondary-color-brown); left: -1px;}
-.experience-box .box-list h3{ font-size: 15px; color: var(--primary-color-brown);}
-.experience-box .box-list .box-left > span{ display: flex; align-items: center; justify-content: end; gap: 12px;}
-.experience-box .box-list .box-left > span small{ display: inline-block; padding: 0 5px; font-size: 10px; color:var(--secondary-color-gray); background-color: var(--other-color-white); border-radius: 20px; padding: 0 5px;}
-.experience-box .box-list .box-left > span small:nth-child(1){ position: relative;}
-.experience-box .box-list .box-left > span small:nth-child(1):after{ display: block; content: ''; width: 12px; height: 1px; background-color: var(--other-color-white); position: absolute; right: -12px; top: 7px;}
-
-.experience-01 h3,
-.experience-02 h3{ margin-bottom: 5px;}
-.experience-01 h3{ background: url(../images/office/icon-ewebs.svg) left center no-repeat; background-size: 25px 20px; padding-left: 35px; line-height: 24px;}
-.experience-02 h3{ background: url(../images/office/icon-sh.svg) left center no-repeat; background-size: 22px; padding-left: 35px; line-height: 24px;}
-
-.experience-box .box-list .box-right ul{ display: flex; flex-wrap: nowrap; align-items: flex-start; margin-bottom: 12px; position: relative; padding-top: 3px;}
-.experience-box .box-list .box-right ul::before{ display: block; content: ''; width: 11px; height: 11px; background: url(../images/office/icon-point.svg) center no-repeat; background-size: 11px; left: -26px; top:8px; position: absolute;}
-.experience-box .box-list .box-right ul li:first-child{ width: 75px; font-size: 14px; color: var(--primary-color-brown);}
-.experience-box .box-list .box-right ul li:last-child{ width: calc(100% - 75px); font-size: 13px; color: var(--secondary-color-black);}
-
-
-/* 右側-技能 */
-.skills-box ul{ display: flex; flex-wrap: wrap;}
-.skills-box ul li{ margin: 0 10px 10px 0; background-color:var(--other-color-white); line-height: 34px; color:var(--secondary-color-black); padding: 0 15px 0 12px; border-radius: 34px;}
-.skills-box ul li span{ display: block; background-repeat: no-repeat; background-position: left center; background-size: 24px;}
-.skills-box ul li span.s-figma{ background-image: url(../images/skills/icon-figma.svg); background-size: 16px; background-position: 5px; padding-left: 30px;}
-.skills-box ul li span.s-xd{ background-image: url(../images/skills/icon-xd.svg); padding-left: 30px;}
-.skills-box ul li span.s-sketch{ background-image: url(../images/skills/icon-sketch.svg); padding-left: 30px;}
-.skills-box ul li span.s-canva{ background-image: url(../images/skills/icon-canva.png); padding-left: 30px;}
-.skills-box ul li span.s-zeplin{ background-image: url(../images/skills/icon-zeplin.svg); padding-left: 30px;}
-.skills-box ul li span.s-lottie{ background-image: url(../images/skills/icon-lottie.png); padding-left: 30px;}
-.skills-box ul li span.s-vsc{ background-image: url(../images/skills/icon-vscode.svg); padding-left: 30px;}
-.skills-box ul li span.s-bsp{ background-image: url(../images/skills/icon-bootstrap.svg); padding-left: 30px;}
-.skills-box ul li span.s-twcss{ background-image: url(../images/skills/icon-tailwindcss.svg); padding-left: 30px;}
-.skills-box ul li span.s-html{ background-image: url(../images/skills/icon-html5.png); padding-left: 30px;}
-.skills-box ul li span.s-jqy{ background-image: url(../images/skills/icon-jquery.svg); padding-left: 30px;}
-.skills-box ul li span.s-vue{ background-image: url(../images/skills/icon-vue.svg); padding-left: 30px;}
-.skills-box ul li span.s-gitlab{ background-image: url(../images/skills/icon-gitlab.svg); padding-left: 30px;}
-.skills-box ul li span.s-github{ background-image: url(../images/skills/icon-github.svg); padding-left: 30px;}
-.skills-box ul li span.s-git{ background-image: url(../images/skills/icon-git.svg); padding-left: 30px;}
-.skills-box ul li span.s-sass{ background-image: url(../images/skills/icon-sass.svg); background-size: auto 22px;  padding-left: 38px;}
-.skills-box ul li span.s-axure{ background-image: url(../images/skills/icon-axure.png); padding-left: 30px;}
-.skills-box ul li span.s-gpt{ background-image: url(../images/skills/icon-gpt.png); padding-left: 30px;}
-.skills-box ul li span.s-mjy{ background-image: url(../images/skills/icon-mj.png); padding-left: 30px;}
-.skills-box ul li span.s-notion{ background-image: url(../images/skills/icon-notion.png); padding-left: 30px;}
-
-/* 右側-學歷＆證書 */
-.content-flex{ display: flex; gap: 30px;}
-.content-flex > div{  width: 50%;}
-
-.education-box .box-list,
-.certification-box .box-list{ margin-bottom: 12px;}
-
-.education-box .box-list,
-.certification-box .box-list{ display: flex; flex-wrap: nowrap;}
-.education-box .box-list .box-left,
-.certification-box .box-list .box-left{ width: 156px; padding-right: 15px;}
-.education-box .box-list .box-right,
-.certification-box .box-list .box-right{ width: calc(100% - 185px); padding-left: 15px; border-left: 1px solid var(--secondary-color-brown);}
-
-.education-box .box-list h3,
-.certification-box .box-list h3{ font-size: 15px; color: var(--primary-color-brown);}
-
-.education-box .box-list .box-right ul li:first-child,
-.certification-box .box-list .box-right ul li:first-child{ font-size: 14px; color: var(--primary-color-brown);}
-
-.education-box .box-list .box-left > span,
-.certification-box .box-list .box-left > span{ display: flex; align-items: center; justify-content: end; font-size: 10px; color: var(--secondary-color-gray); gap: 12px;}
-
-.education-box .box-list .box-left > span small,
-.certification-box .box-list .box-left > span small{ display: inline-block;  padding: 0 5px; font-size: 10px; color: var(--secondary-color-gray); background-color: var(--other-color-white); border-radius: 20px; padding: 0 5px;}
-
-.education-box .box-list .box-left > span small:nth-child(1){ position: relative;}
-.education-box .box-list .box-left > span small:nth-child(1):after{ display: block; content: ''; width: 12px; height: 1px; background-color: var(--other-color-white); position: absolute; right: -12px; top: 7px;}
-
-.certification-box .box-list a,
-.certification-box .box-list a:hover{ color: var(--secondary-color-black);}
-
-.education-01 h3{ background: url(../images/office/icon-just.png) left center no-repeat; background-size: 24px; padding-left: 35px; line-height: 24px;}
-.education-02 h3{ background: url(../images/office/icon-ssvs.png) left center no-repeat; background-size: 24px; padding-left: 35px; line-height: 24px;}
-
-.certification-01 h3{ background: url(../images/office/icon-coursera.png) left center no-repeat; background-size: 24px; padding-left: 35px; line-height: 24px;}
-.certification-02 h3{ background: url(../images/office/icon-ck.png) left center no-repeat; background-size: 24px; padding-left: 35px; line-height: 24px;}
-
-/* 專案作品 */
-.portfolio-box .content-title{ position: relative;}
-.portfolio-box .content-title span{ position: absolute; left: 105px; top: 0px; display: block; width: 73px; padding: 3px 8px;  border-radius: 2px; color: var(--other-color-white); background-color: var(--secondary-color-brown); font-size: 12px;}
-.portfolio-box .box-list{ width: 100%; overflow-x: hidden;}
-.portfolio-box .box-list .card{ background-color: var(--other-color-white);}
-.portfolio-box .box-list .card > div{ padding:10px 12px 12px 12px;}
-.portfolio-box .box-list .card > div h3 a{ display: block; width: 100%; color: var(--primary-color-brown); font-size:15px; text-decoration: none;}
-.portfolio-box .box-list .card > div h3{ margin-bottom: 5px;}
-.portfolio-box .box-list .card > div ul{ display: flex; flex-wrap: wrap;}
-.portfolio-box .box-list .card > div ul li{ display: inline-block; font-size: 11px; padding: 3px 10px; background-color: var(--other-color-gray10); color: var(--secondary-color-brown); font-size: 11px; margin-right: 6px; margin-bottom: 6px; border-radius: 10px;}
-
-/* --- 版尾 --- */
-footer{ width: calc(100% - 405px); margin-left: 345px; padding: 5px 30px 5px 30px; font-size: 11px; color: #666;}
-
-
-@media screen and (max-width: 1200px) {
-    .content-flex{ display: block;}
-    .content-flex > div{ width: 100%;}
-}
-
-@media screen and (max-width: 960px) {
-    header{ width: 100%; max-width: 100%;}
-    .main-flex{ display: block;}
-    .main-flex .section-left{ position: unset; max-width: 100%; height: auto;}
-    .main-flex .section-right{ width:calc(100% - 60px); margin-left: 0;}
-    .content-flex{ display: flex;}
-    .content-flex > div{ width: 50%;}
-    footer{ width: 100%; text-align: center; padding: 5px 0; margin: 0;}
-}
-
-@media screen and (max-width: 840px) {
-    .content-flex{ display: block;}
-    .content-flex > div{ width: 100%;}
-}
-
-@media screen and (max-width: 480px) {
-    /* 版頭 */
-    header{ background-color:var(--other-color-gray10); transition: all .8s;}
-    header .logo, header .logo a{ width: 200px; height: 55px; transition: all .8s;}
-    header .logo a{ background: url(../images/header/logo-s.svg) center no-repeat; background-size: 200px; transition: all .8s;}
-
-    .header-m{ background-color: var(--other-color-gray30); transition: all .8s;}
-    .header-m .logo, .header-m .logo a{ width: 144px; height: 35px; transition: all .8s;}
-    .header-m .logo a{ background: url(../images/header/logo-s.svg) center no-repeat; background-size: 144px; transition: all .8s;}
-
-    .main-flex .section-left{ margin-top: 65px;}
-
-    /* 經歷 */
-    .experience-box .box-list .box-left{ display: flex; width: 100%; padding-right: 20px; align-items: center; justify-content: space-between;}
-    .experience-box .box-list{ display: block;}
-    .experience-box .box-list .box-right{ width: calc(100% - 31px); margin-left: 11px;}
-    .experience-box .box-list .box-right ul li:first-child{ padding-left: 3px;}
-    /* 技能 */
-    .skills-box ul li{ margin: 0 5px 5px 0;}
-    /* 學歷 */
-    .education-box .box-list, .certification-box .box-list{ display: block;}
-    .education-box .box-list .box-right, .certification-box .box-list .box-right{ margin-top: 5px; width: calc(100% - 35px); padding-left: 15px; border-left: 0; margin-left: 20px;}
-    .education-box .box-list .box-left, .certification-box .box-list .box-left{ width: 100%; display: flex; align-items: center; justify-content: space-between;}
-
-  
-}
-
-
-/*                       
-___  ___  ________   ________      ___       __      
-|\  \|\  \|\   ___  \|\   __  \    |\  \     |\  \    
-\ \  \\\  \ \  \\ \  \ \  \|\  \   \ \  \    \ \  \   
-\ \  \\\  \ \  \\ \  \ \   __  \   \ \  \  __\ \  \  
- \ \  \\\  \ \  \\ \  \ \  \ \  \ __\ \  \|\__\_\  \ 
-  \ \_______\ \__\\ \__\ \__\ \__\\__\ \____________\
-   \|_______|\|__| \|__|\|__|\|__\|__|\|____________|
-   
-&copy; 2024 Una Wang. All Rights Reserved.
-*/     
+.content-title {
+  display: inline-block;
+  width: auto;
+  padding-bottom: 6px;
+  margin-bottom: 10px;
+  font-size: 16px;
+  line-height: 1.5;
+  color: var(--primary-color-brown);
+  border-bottom: 2px solid var(--other-color-white);
+}/*# sourceMappingURL=style.css.map */
