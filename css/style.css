@@ -106,4 +106,461 @@ body, html {
   line-height: 1.5;
   color: var(--primary-color-brown);
   border-bottom: 2px solid var(--other-color-white);
+}
+
+/* --- 版頭 --- */
+header {
+  width: 100%;
+  max-width: 345px;
+  height: auto;
+  background-color: var(--other-color-gray30);
+  padding: 15px 0;
+  position: fixed;
+  top: 0;
+  z-index: 10;
+}
+header .logo {
+  display: block;
+  width: 146px;
+  height: 85px;
+  margin: 0 auto;
+}
+header .logo a {
+  display: block;
+  background: url(../images/header/logo.svg) no-repeat;
+  text-indent: -9999px;
+}
+header nav {
+  display: none;
+}
+
+/* --- 內容 --- */
+.main-flex {
+  display: flex;
+}
+.main-flex .section-left {
+  position: fixed;
+  z-index: 1;
+  max-width: 295px;
+  height: 100vh;
+  margin-top: 115px;
+  padding: 20px 25px;
+  background: url(../images/header/bg.svg) var(--other-color-gray30) left top repeat-x;
+}
+.main-flex .section-right {
+  width: calc(100% - 405px);
+  margin-left: 345px;
+  padding: 25px 30px 30px 30px;
+}
+
+/* 左側-介紹 */
+.info-box > img {
+  display: block;
+  width: 165px;
+  height: 165px;
+  border: 7px solid var(--other-color-gray30);
+  border-radius: 50%;
+  overflow: hidden;
+  margin: 0 auto;
+}
+.info-box > h1 {
+  width: 100%;
+  text-align: center;
+  font-size: 25px;
+  color: var(--primary-color-brown);
+  letter-spacing: 5px;
+}
+.info-box > span {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 15px;
+  color: var(--secondary-color-gray);
+}
+
+.contact-box ul li {
+  display: block;
+  width: auto;
+  margin-bottom: 10px;
+  padding-left: 35px;
+}
+.contact-box ul li:nth-child(1) {
+  background: url(../images/header/icon-mail.svg) left center no-repeat;
+  background-size: 24px;
+}
+.contact-box ul li:nth-child(2) {
+  background: url(../images/header/icon-linkedin.svg) left center no-repeat;
+  background-size: 24px;
+}
+.contact-box ul li a {
+  color: var(--secondary-color-black);
+  line-height: 24px;
+}
+
+/* 右側-經歷 */
+.experience-box .box-list {
+  display: flex;
+  flex-wrap: nowrap;
+}
+.experience-box .box-list .box-left {
+  width: 130px;
+  padding-right: 20px;
+}
+.experience-box .box-list .box-left > span {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  gap: 12px;
+}
+.experience-box .box-list .box-left > span small {
+  display: inline-block;
+  padding: 0 5px;
+  font-size: 10px;
+  color: var(--secondary-color-gray);
+  background-color: var(--other-color-white);
+  border-radius: 20px;
+}
+.experience-box .box-list .box-left > span small:nth-child(1) {
+  position: relative;
+}
+.experience-box .box-list .box-left > span small:nth-child(1):after {
+  display: block;
+  content: "";
+  width: 12px;
+  height: 1px;
+  background-color: var(--other-color-white);
+  position: absolute;
+  right: -12px;
+  top: 7px;
+}
+.experience-box .box-list .box-right {
+  width: calc(100% - 170px);
+  padding-left: 20px;
+  border-left: 1px solid var(--secondary-color-brown);
+  position: relative;
+}
+.experience-box .box-list .box-right.experience-02 {
+  border-left-color: var(--other-color-gray10);
+}
+.experience-box .box-list .box-right.experience-01:before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 1px;
+  height: 10px;
+  background-color: var(--other-color-gray10);
+  left: -1px;
+}
+.experience-box .box-list .box-right.experience-02:before {
+  position: absolute;
+  content: "";
+  display: block;
+  width: 1px;
+  height: 10px;
+  background-color: var(--secondary-color-brown);
+  left: -1px;
+}
+.experience-box .box-list .box-right ul {
+  display: flex;
+  flex-wrap: nowrap;
+  align-items: flex-start;
+  margin-bottom: 12px;
+  position: relative;
+  padding-top: 3px;
+}
+.experience-box .box-list .box-right ul:before {
+  display: block;
+  content: "";
+  width: 11px;
+  height: 11px;
+  background: url(../images/office/icon-point.svg) center no-repeat;
+  background-size: 11px;
+  position: absolute;
+  left: -26px;
+  top: 8px;
+}
+.experience-box .box-list .box-right ul li:first-child {
+  width: 75px;
+  font-size: 14px;
+  color: var(--primary-color-brown);
+}
+.experience-box .box-list .box-right ul li:last-child {
+  width: calc(100% - 75px);
+  font-size: 13px;
+  color: var(--secondary-color-black);
+}
+.experience-box .box-list h3 {
+  font-size: 15px;
+  color: var(--primary-color-brown);
+  margin-bottom: 5px;
+}
+.experience-box .box-list h3.experience-01 {
+  background: url(../images/office/icon-ewebs.svg) left center no-repeat;
+  background-size: 25px 20px;
+  padding-left: 35px;
+  line-height: 24px;
+}
+.experience-box .box-list h3.experience-02 {
+  background: url(../images/office/icon-sh.svg) left center no-repeat;
+  background-size: 22px;
+  padding-left: 35px;
+  line-height: 24px;
+}
+
+/* 右側-技能 */
+.skills-box ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.skills-box ul li {
+  margin: 0 10px 10px 0;
+  background-color: var(--other-color-white);
+  line-height: 34px;
+  color: var(--secondary-color-black);
+  padding: 0 15px 0 12px;
+  border-radius: 34px;
+}
+.skills-box ul li span {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: left center;
+  background-size: 24px;
+}
+.skills-box ul li span.s-figma {
+  background-image: url(../images/skills/icon-figma.svg);
+  background-size: 16px;
+  background-position: 5px;
+  padding-left: 30px;
+}
+.skills-box ul li span.s-xd {
+  background-image: url(../images/skills/icon-xd.svg);
+  padding-left: 30px;
+}
+.skills-box ul li span.s-sketch {
+  background-image: url(../images/skills/icon-sketch.svg);
+  padding-left: 30px;
+}
+.skills-box ul li span.s-canva {
+  background-image: url(../images/skills/icon-canva.png);
+  padding-left: 30px;
+}
+.skills-box ul li span.s-zeplin {
+  background-image: url(../images/skills/icon-zeplin.svg);
+  padding-left: 30px;
+}
+.skills-box ul li span.s-lottie {
+  background-image: url(../images/skills/icon-lottie.png);
+  padding-left: 30px;
+}
+.skills-box ul li span.s-vsc {
+  background-image: url(../images/skills/icon-vscode.svg);
+  padding-left: 30px;
+}
+.skills-box ul li span.s-bsp {
+  background-image: url(../images/skills/icon-bootstrap.svg);
+  padding-left: 30px;
+}
+.skills-box ul li span.s-twcss {
+  background-image: url(../images/skills/icon-tailwindcss.svg);
+  padding-left: 30px;
+}
+.skills-box ul li span.s-html {
+  background-image: url(../images/skills/icon-html5.png);
+  padding-left: 30px;
+}
+.skills-box ul li span.s-jqy {
+  background-image: url(../images/skills/icon-jquery.svg);
+  padding-left: 30px;
+}
+.skills-box ul li span.s-vue {
+  background-image: url(../images/skills/icon-vue.svg);
+  padding-left: 30px;
+}
+.skills-box ul li span.s-gitlab {
+  background-image: url(../images/skills/icon-gitlab.svg);
+  padding-left: 30px;
+}
+.skills-box ul li span.s-github {
+  background-image: url(../images/skills/icon-github.svg);
+  padding-left: 30px;
+}
+.skills-box ul li span.s-git {
+  background-image: url(../images/skills/icon-git.svg);
+  padding-left: 30px;
+}
+.skills-box ul li span.s-sass {
+  background-image: url(../images/skills/icon-sass.svg);
+  background-size: auto 22px;
+  padding-left: 38px;
+}
+.skills-box ul li span.s-axure {
+  background-image: url(../images/skills/icon-axure.png);
+  padding-left: 30px;
+}
+.skills-box ul li span.s-gpt {
+  background-image: url(../images/skills/icon-gpt.png);
+  padding-left: 30px;
+}
+.skills-box ul li span.s-mjy {
+  background-image: url(../images/skills/icon-mj.png);
+  padding-left: 30px;
+}
+.skills-box ul li span.s-notion {
+  background-image: url(../images/skills/icon-notion.png);
+  padding-left: 30px;
+}
+
+/* --- 右側-學歷＆證書 --- */
+.content-flex {
+  display: flex;
+  gap: 30px;
+}
+.content-flex > div {
+  width: 50%;
+}
+
+.education-box .box-list,
+.certification-box .box-list {
+  margin-bottom: 12px;
+  display: flex;
+  flex-wrap: nowrap;
+}
+.education-box .box-list .box-left,
+.certification-box .box-list .box-left {
+  width: 156px;
+  padding-right: 15px;
+}
+.education-box .box-list .box-left > span,
+.certification-box .box-list .box-left > span {
+  display: flex;
+  align-items: center;
+  justify-content: end;
+  font-size: 10px;
+  color: var(--secondary-color-gray);
+  gap: 12px;
+}
+.education-box .box-list .box-left > span small,
+.certification-box .box-list .box-left > span small {
+  display: inline-block;
+  padding: 0 5px;
+  font-size: 10px;
+  color: var(--secondary-color-gray);
+  background-color: var(--other-color-white);
+  border-radius: 20px;
+}
+.education-box .box-list .box-left > span small:nth-child(1),
+.certification-box .box-list .box-left > span small:nth-child(1) {
+  position: relative;
+}
+.education-box .box-list .box-left > span small:nth-child(1):after,
+.certification-box .box-list .box-left > span small:nth-child(1):after {
+  display: block;
+  content: "";
+  width: 12px;
+  height: 1px;
+  background-color: var(--other-color-white);
+  position: absolute;
+  right: -12px;
+  top: 7px;
+}
+.education-box .box-list .box-right,
+.certification-box .box-list .box-right {
+  width: calc(100% - 185px);
+  padding-left: 15px;
+  border-left: 1px solid var(--secondary-color-brown);
+}
+.education-box .box-list .box-right ul li:first-child,
+.certification-box .box-list .box-right ul li:first-child {
+  font-size: 14px;
+  color: var(--primary-color-brown);
+}
+.education-box .box-list h3,
+.certification-box .box-list h3 {
+  font-size: 15px;
+  color: var(--primary-color-brown);
+}
+.education-box .box-list h3.education-01,
+.certification-box .box-list h3.education-01 {
+  background: url(../images/office/icon-just.png) left center no-repeat;
+  background-size: 24px;
+  padding-left: 35px;
+  line-height: 24px;
+}
+.education-box .box-list h3.education-02,
+.certification-box .box-list h3.education-02 {
+  background: url(../images/office/icon-ssvs.png) left center no-repeat;
+  background-size: 24px;
+  padding-left: 35px;
+  line-height: 24px;
+}
+.education-box .box-list h3.certification-01,
+.certification-box .box-list h3.certification-01 {
+  background: url(../images/office/icon-coursera.png) left center no-repeat;
+  background-size: 24px;
+  padding-left: 35px;
+  line-height: 24px;
+}
+.education-box .box-list h3.certification-02,
+.certification-box .box-list h3.certification-02 {
+  background: url(../images/office/icon-ck.png) left center no-repeat;
+  background-size: 24px;
+  padding-left: 35px;
+  line-height: 24px;
+}
+.education-box a,
+.education-box a:hover,
+.certification-box a,
+.certification-box a:hover {
+  color: var(--secondary-color-black);
+}
+
+/* --- 專案作品 --- */
+.portfolio-box .content-title {
+  position: relative;
+}
+.portfolio-box .content-title span {
+  position: absolute;
+  left: 105px;
+  top: 0;
+  display: block;
+  width: 73px;
+  padding: 3px 8px;
+  border-radius: 2px;
+  color: var(--other-color-white);
+  background-color: var(--secondary-color-brown);
+  font-size: 12px;
+}
+.portfolio-box .box-list {
+  width: 100%;
+  overflow-x: hidden;
+}
+.portfolio-box .box-list .card {
+  background-color: var(--other-color-white);
+}
+.portfolio-box .box-list .card > div {
+  padding: 10px 12px 12px 12px;
+}
+.portfolio-box .box-list .card > div h3 {
+  margin-bottom: 5px;
+}
+.portfolio-box .box-list .card > div h3 a {
+  display: block;
+  width: 100%;
+  color: var(--primary-color-brown);
+  font-size: 15px;
+  text-decoration: none;
+}
+.portfolio-box .box-list .card > div ul {
+  display: flex;
+  flex-wrap: wrap;
+}
+.portfolio-box .box-list .card > div ul li {
+  display: inline-block;
+  font-size: 11px;
+  padding: 3px 10px;
+  background-color: var(--other-color-gray10);
+  color: var(--secondary-color-brown);
+  margin-right: 6px;
+  margin-bottom: 6px;
+  border-radius: 10px;
 }/*# sourceMappingURL=style.css.map */
