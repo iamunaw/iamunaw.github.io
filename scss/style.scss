@@ -83,7 +83,8 @@ body,html{ background-color: var(--other-color-gray10); font-size: 13px; line-he
 /* --- 共用 --- */
 .content-title{ display: inline-block; width: auto; padding-bottom: 6px; margin-bottom:10px; font-size: 16px; line-height: 1.5; color:var(--primary-color-brown); border-bottom:2px solid var(--other-color-white);}
 
-/* --- Header --- */
+//* --- 版頭 --- */
+
 header {
     width: 100%;
     max-width: 345px;
@@ -94,14 +95,17 @@ header {
     top: 0;
     z-index: 10;
   
-    .logo,
-    .logo a {
+    .logo {
       display: block;
       width: 146px;
       height: 85px;
       margin: 0 auto;
   
       a {
+        display: block;
+        width: 146px;
+        height: 85px;
+        margin: 0 auto;
         background: url(../images/header/logo.svg);
         text-indent: -9999px;
       }
@@ -112,7 +116,8 @@ header {
     }
   }
   
-  /* --- Main Content --- */
+  /* --- 內容 --- */
+  
   .main-flex {
     display: flex;
   
@@ -133,9 +138,10 @@ header {
     }
   }
   
-  /* --- Left Section Introduction --- */
-  .info-box {
-    > img {
+  /* 左側-介紹 */
+  
+  .info-box > {
+    img {
       display: block;
       width: 165px;
       height: 165px;
@@ -145,7 +151,7 @@ header {
       margin: 0 auto;
     }
   
-    > h1 {
+    h1 {
       width: 100%;
       text-align: center;
       font-size: 25px;
@@ -153,7 +159,7 @@ header {
       letter-spacing: 5px;
     }
   
-    > span {
+    span {
       display: block;
       width: 100%;
       text-align: center;
@@ -162,33 +168,31 @@ header {
     }
   }
   
-  .contact-box {
-    ul {
-      li {
-        &:nth-child(1) {
-          background: url(../images/header/icon-mail.svg) left center no-repeat;
-          background-size: 24px;
-        }
+  .contact-box ul li {
+    &:nth-child(1) {
+      background: url(../images/header/icon-mail.svg) left center no-repeat;
+      background-size: 24px;
+    }
   
-        &:nth-child(2) {
-          background: url(../images/header/icon-linkedin.svg) left center no-repeat;
-          background-size: 24px;
-        }
+    &:nth-child(2) {
+      background: url(../images/header/icon-linkedin.svg) left center no-repeat;
+      background-size: 24px;
+    }
   
-        display: block;
-        width: auto;
-        margin-bottom: 10px;
-        padding-left: 35px;
+    display: block;
+    width: auto;
+    margin-bottom: 10px;
+    padding-left: 35px;
   
-        a {
-          color: var(--secondary-color-black);
-          line-height: 24px;
-        }
-      }
+    a {
+      color: var(--secondary-color-black);
+      color: var(--secondary-color-black);
+      line-height: 24px;
     }
   }
   
-  /* --- Experience Section --- */
+  /* 右側-經歷 */
+  
   .experience-box {
     .box-list {
       display: flex;
@@ -197,37 +201,6 @@ header {
       .box-left {
         width: 130px;
         padding-right: 20px;
-  
-        > span {
-          display: flex;
-          align-items: center;
-          justify-content: end;
-          gap: 12px;
-  
-          small {
-            display: inline-block;
-            padding: 0 5px;
-            font-size: 10px;
-            color: var(--secondary-color-gray);
-            background-color: var(--other-color-white);
-            border-radius: 20px;
-  
-            &:nth-child(1) {
-              position: relative;
-  
-              &:after {
-                display: block;
-                content: '';
-                width: 12px;
-                height: 1px;
-                background-color: var(--other-color-white);
-                position: absolute;
-                right: -12px;
-                top: 7px;
-              }
-            }
-          }
-        }
       }
   
       .box-right {
@@ -235,114 +208,57 @@ header {
         padding-left: 20px;
         border-left: 1px solid var(--secondary-color-brown);
         position: relative;
-  
-        &.experience-02 {
-          border-left-color: var(--other-color-gray10);
-        }
-  
-        &:before {
-          position: absolute;
-          content: '';
-          display: block;
-          width: 1px;
-          height: 10px;
-          left: -1px;
-  
-          &.experience-01 {
-            background-color: var(--other-color-gray10);
-          }
-  
-          &.experience-02 {
-            background-color: var(--secondary-color-brown);
-          }
-        }
       }
+    }
   
+    .experience-02 .box-right {
+      border-left-color: var(--other-color-gray10);
+    }
+  
+    .experience-01 .box-right:before {
+      position: absolute;
+      content: '';
+      display: block;
+      width: 1px;
+      height: 10px;
+      background-color: var(--other-color-gray10);
+      left: -1px;
+    }
+  
+    .experience-02 .box-right:before {
+      position: absolute;
+      content: '';
+      display: block;
+      width: 1px;
+      height: 10px;
+      background-color: var(--secondary-color-brown);
+      left: -1px;
+    }
+  
+    .box-list {
       h3 {
         font-size: 15px;
         color: var(--primary-color-brown);
-        margin-bottom: 5px;
-  
-        &.experience-01 {
-          background: url(../images/office/icon-ewebs.svg) left center no-repeat;
-          background-size: 25px 20px;
-          padding-left: 35px;
-          line-height: 24px;
-        }
-  
-        &.experience-02 {
-          background: url(../images/office/icon-sh.svg) left center no-repeat;
-          background-size: 22px;
-          padding-left: 35px;
-          line-height: 24px;
-        }
       }
-    }
-  }
-/* --- Skills Section (Continued) --- */
-        &.s-axure {
-          background-image: url(../images/skills/icon-axure.png);
-          padding-left: 30px;
-        }
-
-        &.s-gpt {
-          background-image: url(../images/skills/icon-gpt.png);
-          padding-left: 30px;
-        }
-
-        &.s-mjy {
-          background-image: url(../images/skills/icon-mj.png);
-          padding-left: 30px;
-        }
-
-        &.s-notion {
-          background-image: url(../images/skills/icon-notion.png);
-          padding-left: 30px;
-        }
-      }
-    }
-  }
-}
-
-/* --- Education and Certification Section --- */
-.content-flex {
-  display: flex;
-  gap: 30px;
-
-  > div {
-    width: 50%;
-  }
-}
-
-.education-box,
-.certification-box {
-  .box-list {
-    margin-bottom: 12px;
-    display: flex;
-    flex-wrap: nowrap;
-
-    .box-left {
-      width: 156px;
-      padding-right: 15px;
-
-      > span {
+  
+      .box-left > span {
         display: flex;
         align-items: center;
         justify-content: end;
         gap: 12px;
-        font-size: 10px;
-        color: var(--secondary-color-gray);
-
+  
         small {
           display: inline-block;
           padding: 0 5px;
           font-size: 10px;
+          color: var(--secondary-color-gray);
           background-color: var(--other-color-white);
           border-radius: 20px;
-
+          padding: 0 5px;
+  
           &:nth-child(1) {
             position: relative;
-
+  
             &:after {
               display: block;
               content: '';
@@ -357,322 +273,190 @@ header {
         }
       }
     }
-
-    .box-right {
-      width: calc(100% - 185px);
-      padding-left: 15px;
-      border-left: 1px solid var(--secondary-color-brown);
-
-      ul li:first-child {
+  }
+  
+  .experience-01 h3, .experience-02 h3 {
+    margin-bottom: 5px;
+  }
+  
+  .experience-01 h3 {
+    background: url(../images/office/icon-ewebs.svg) left center no-repeat;
+    background-size: 25px 20px;
+    padding-left: 35px;
+    line-height: 24px;
+  }
+  
+  .experience-02 h3 {
+    background: url(../images/office/icon-sh.svg) left center no-repeat;
+    background-size: 22px;
+    padding-left: 35px;
+    line-height: 24px;
+  }
+  
+  .experience-box .box-list .box-right ul {
+    display: flex;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    margin-bottom: 12px;
+    position: relative;
+    padding-top: 3px;
+  
+    &::before {
+      display: block;
+      content: '';
+      width: 11px;
+      height: 11px;
+      background: url(../images/office/icon-point.svg) center no-repeat;
+      background-size: 11px;
+      left: -26px;
+      top: 8px;
+      position: absolute;
+    }
+  
+    li {
+      &:first-child {
+        width: 75px;
         font-size: 14px;
         color: var(--primary-color-brown);
       }
-    }
-  }
-
-  h3 {
-    font-size: 15px;
-    color: var(--primary-color-brown);
-
-    &.education-01 {
-      background: url(../images/office/icon-just.png) left center no-repeat;
-      background-size: 24px;
-      padding-left: 35px;
-      line-height: 24px;
-    }
-
-    &.education-02 {
-      background: url(../images/office/icon-ssvs.png) left center no-repeat;
-      background-size: 24px;
-      padding-left: 35px;
-      line-height: 24px;
-    }
-
-    &.certification-01 {
-      background: url(../images/office/icon-coursera.png) left center no-repeat;
-      background-size: 24px;
-      padding-left: 35px;
-      line-height: 24px;
-    }
-
-    &.certification-02 {
-      background: url(../images/office/icon-ck.png) left center no-repeat;
-      background-size: 24px;
-      padding-left: 35px;
-      line-height: 24px;
-    }
-  }
-}
-
-/* --- Portfolio Section --- */
-.portfolio-box {
-  .content-title {
-    position: relative;
-
-    span {
-      position: absolute;
-      left: 105px;
-      top: 0;
-      display: block;
-      width: 73px;
-      padding: 3px 8px;
-      border-radius: 2px;
-      color: var(--other-color-white);
-      background-color: var(--secondary-color-brown);
-      font-size: 12px;
-    }
-  }
-
-  .box-list {
-    width: 100%;
-    overflow-x: hidden;
-
-    .card {
-      background-color: var(--other-color-white);
-
-      > div {
-        padding: 10px 12px 12px 12px;
-
-        h3 {
-          margin-bottom: 5px;
-
-          a {
-            display: block;
-            width: 100%;
-            color: var(--primary-color-brown);
-            font-size: 15px;
-            text-decoration: none;
-          }
-        }
-
-        ul {
-          display: flex;
-          flex-wrap: wrap;
-
-          li {
-            display: inline-block;
-            font-size: 11px;
-            padding: 3px 10px;
-            background-color: var(--other-color-gray10);
-            color: var(--secondary-color-brown);
-            margin-right: 6px;
-            margin-bottom: 6px;
-            border-radius: 10px;
-          }
-        }
-      }
-    }
-  }
-}
-
-/* --- Footer Section --- */
-footer {
-  width: calc(100% - 405px);
-  margin-left: 345px;
-  padding: 5px 30px;
-  font-size: 11px;
-  color: #666;
-
-  @media screen and (max-width: 960px) {
-    width: 100%;
-    text-align: center;
-    padding: 5px 0;
-    margin: 0;
-  }
-}
-
-@media screen and (max-width: 1200px) {
-  .content-flex {
-    display: block;
-
-    > div {
-      width: 100%;
-    }
-  }
-}
-
-@media screen and (max-width: 840px) {
-  .content-flex {
-    display: block;
-
-    > div {
-      width: 100%;
-    }
-  }
-}
-
-@media screen and (max-width: 480px) {
-  header {
-    background-color: var(--other-color-gray10);
-    transition: all 0.8s;
-
-    .logo,
-    .logo a {
-      width: 200px;
-      height: 55px;
-      transition: all 0.8s;
-
-      a {
-        background: url(../images/header/logo-s.svg) center no-repeat;
-        background-size: 200px;
-      }
-    }
-  }
-
-  .header-m {
-    background-color: var(--other-color-gray30);
-    transition: all 0.8s;
-
-    .logo,
-    .logo a {
-      width: 144px;
-      height: 35px;
-      transition: all 0.8s;
-
-      a {
-        background: url(../images/header/logo-s.svg) center no-repeat;
-        background-size: 144px;
-      }
-    }
-  }
-
-  .main-flex {
-    .section-left {
-      margin-top: 65px;
-    }
-  }
-}
-
-/* --- Skills Section --- */
-.skills-box {
-    ul {
-      display: flex;
-      flex-wrap: wrap;
   
-      li {
-        margin: 0 10px 10px 0;
-        background-color: var(--other-color-white);
-        line-height: 34px;
+      &:last-child {
+        width: calc(100% - 75px);
+        font-size: 13px;
         color: var(--secondary-color-black);
-        padding: 0 15px 0 12px;
-        border-radius: 34px;
+      }
+    }
+  }
   
-        span {
-          display: block;
-          background-repeat: no-repeat;
-          background-position: left center;
-          background-size: 24px;
+  /* 右側-技能 */
   
-          &.s-figma {
-            background-image: url(../images/skills/icon-figma.svg);
-            background-size: 16px;
-            background-position: 5px;
-            padding-left: 30px;
-          }
+  .skills-box ul {
+    display: flex;
+    flex-wrap: wrap;
   
-          &.s-xd {
-            background-image: url(../images/skills/icon-xd.svg);
-            padding-left: 30px;
-          }
+    li {
+      margin: 0 10px 10px 0;
+      background-color: var(--other-color-white);
+      line-height: 34px;
+      color: var(--secondary-color-black);
+      padding: 0 15px 0 12px;
+      border-radius: 34px;
   
-          &.s-sketch {
-            background-image: url(../images/skills/icon-sketch.svg);
-            padding-left: 30px;
-          }
+      span {
+        display: block;
+        background-repeat: no-repeat;
+        background-position: left center;
+        background-size: 24px;
   
-          &.s-canva {
-            background-image: url(../images/skills/icon-canva.png);
-            padding-left: 30px;
-          }
+        &.s-figma {
+          background-image: url(../images/skills/icon-figma.svg);
+          background-size: 16px;
+          background-position: 5px;
+          padding-left: 30px;
+        }
   
-          &.s-zeplin {
-            background-image: url(../images/skills/icon-zeplin.svg);
-            padding-left: 30px;
-          }
+        &.s-xd {
+          background-image: url(../images/skills/icon-xd.svg);
+          padding-left: 30px;
+        }
   
-          &.s-lottie {
-            background-image: url(../images/skills/icon-lottie.png);
-            padding-left: 30px;
-          }
+        &.s-sketch {
+          background-image: url(../images/skills/icon-sketch.svg);
+          padding-left: 30px;
+        }
   
-          &.s-vsc {
-            background-image: url(../images/skills/icon-vscode.svg);
-            padding-left: 30px;
-          }
+        &.s-canva {
+          background-image: url(../images/skills/icon-canva.png);
+          padding-left: 30px;
+        }
   
-          &.s-bsp {
-            background-image: url(../images/skills/icon-bootstrap.svg);
-            padding-left: 30px;
-          }
+        &.s-zeplin {
+          background-image: url(../images/skills/icon-zeplin.svg);
+          padding-left: 30px;
+        }
   
-          &.s-twcss {
-            background-image: url(../images/skills/icon-tailwindcss.svg);
-            padding-left: 30px;
-          }
+        &.s-lottie {
+          background-image: url(../images/skills/icon-lottie.png);
+          padding-left: 30px;
+        }
   
-          &.s-html {
-            background-image: url(../images/skills/icon-html5.png);
-            padding-left: 30px;
-          }
+        &.s-vsc {
+          background-image: url(../images/skills/icon-vscode.svg);
+          padding-left: 30px;
+        }
   
-          &.s-jqy {
-            background-image: url(../images/skills/icon-jquery.svg);
-            padding-left: 30px;
-          }
+        &.s-bsp {
+          background-image: url(../images/skills/icon-bootstrap.svg);
+          padding-left: 30px;
+        }
   
-          &.s-vue {
-            background-image: url(../images/skills/icon-vue.svg);
-            padding-left: 30px;
-          }
+        &.s-twcss {
+          background-image: url(../images/skills/icon-tailwindcss.svg);
+          padding-left: 30px;
+        }
   
-          &.s-gitlab {
-            background-image: url(../images/skills/icon-gitlab.svg);
-            padding-left: 30px;
-          }
+        &.s-html {
+          background-image: url(../images/skills/icon-html5.png);
+          padding-left: 30px;
+        }
   
-          &.s-github {
-            background-image: url(../images/skills/icon-github.svg);
-            padding-left: 30px;
-          }
+        &.s-jqy {
+          background-image: url(../images/skills/icon-jquery.svg);
+          padding-left: 30px;
+        }
   
-          &.s-git {
-            background-image: url(../images/skills/icon-git.svg);
-            padding-left: 30px;
-          }
+        &.s-vue {
+          background-image: url(../images/skills/icon-vue.svg);
+          padding-left: 30px;
+        }
   
-          &.s-sass {
-            background-image: url(../images/skills/icon-sass.svg);
-            background-size: auto 22px;
-            padding-left: 38px;
-          }
+        &.s-gitlab {
+          background-image: url(../images/skills/icon-gitlab.svg);
+          padding-left: 30px;
+        }
   
-          &.s-axure {
-            background-image: url(../images/skills/icon-axure.png);
-            padding-left: 30px;
-          }
+        &.s-github {
+          background-image: url(../images/skills/icon-github.svg);
+          padding-left: 30px;
+        }
   
-          &.s-gpt {
-            background-image: url(../images/skills/icon-gpt.png);
-            padding-left: 30px;
-          }
+        &.s-git {
+          background-image: url(../images/skills/icon-git.svg);
+          padding-left: 30px;
+        }
   
-          &.s-mjy {
-            background-image: url(../images/skills/icon-mj.png);
-            padding-left: 30px;
-          }
+        &.s-sass {
+          background-image: url(../images/skills/icon-sass.svg);
+          background-size: auto 22px;
+          padding-left: 38px;
+        }
   
-          &.s-notion {
-            background-image: url(../images/skills/icon-notion.png);
-            padding-left: 30px;
-          }
+        &.s-axure {
+          background-image: url(../images/skills/icon-axure.png);
+          padding-left: 30px;
+        }
+  
+        &.s-gpt {
+          background-image: url(../images/skills/icon-gpt.png);
+          padding-left: 30px;
+        }
+  
+        &.s-mjy {
+          background-image: url(../images/skills/icon-mj.png);
+          padding-left: 30px;
+        }
+  
+        &.s-notion {
+          background-image: url(../images/skills/icon-notion.png);
+          padding-left: 30px;
         }
       }
     }
   }
   
-
-/* --- Education and Certification Section --- */
-.content-flex {
+  /* 右側-學歷＆證書 */
+  
+  .content-flex {
     display: flex;
     gap: 30px;
   
@@ -681,97 +465,108 @@ footer {
     }
   }
   
-  .education-box,
-  .certification-box {
-    .box-list {
-      margin-bottom: 12px;
-      display: flex;
-      flex-wrap: nowrap;
+  .education-box .box-list, .certification-box .box-list {
+    margin-bottom: 12px;
+  }
   
-      .box-left {
-        width: 156px;
-        padding-right: 15px;
+  .education-box .box-list, .certification-box .box-list {
+    display: flex;
+    flex-wrap: nowrap;
+  }
   
-        > span {
-          display: flex;
-          align-items: center;
-          justify-content: end;
-          gap: 12px;
-          font-size: 10px;
-          color: var(--secondary-color-gray);
+  .education-box .box-list .box-left, .certification-box .box-list .box-left {
+    width: 156px;
+    padding-right: 15px;
+  }
   
-          small {
-            display: inline-block;
-            padding: 0 5px;
-            font-size: 10px;
-            background-color: var(--other-color-white);
-            border-radius: 20px;
+  .education-box .box-list .box-right, .certification-box .box-list .box-right {
+    width: calc(100% - 185px);
+    padding-left: 15px;
+    border-left: 1px solid var(--secondary-color-brown);
+  }
   
-            &:nth-child(1) {
-              position: relative;
+  .education-box .box-list h3, .certification-box .box-list h3 {
+    font-size: 15px;
+    color: var(--primary-color-brown);
+  }
   
-              &:after {
-                display: block;
-                content: '';
-                width: 12px;
-                height: 1px;
-                background-color: var(--other-color-white);
-                position: absolute;
-                right: -12px;
-                top: 7px;
-              }
-            }
-          }
-        }
-      }
+  .education-box .box-list .box-right ul li:first-child, .certification-box .box-list .box-right ul li:first-child {
+    font-size: 14px;
+    color: var(--primary-color-brown);
+  }
   
-      .box-right {
-        width: calc(100% - 185px);
-        padding-left: 15px;
-        border-left: 1px solid var(--secondary-color-brown);
+  .education-box .box-list .box-left > span, .certification-box .box-list .box-left > span {
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    font-size: 10px;
+    color: var(--secondary-color-gray);
+    gap: 12px;
+  }
   
-        ul li:first-child {
-          font-size: 14px;
-          color: var(--primary-color-brown);
-        }
-      }
-    }
+  .education-box .box-list .box-left > span small, .certification-box .box-list .box-left > span small {
+    display: inline-block;
+    padding: 0 5px;
+    font-size: 10px;
+    color: var(--secondary-color-gray);
+    background-color: var(--other-color-white);
+    border-radius: 20px;
+    padding: 0 5px;
+  }
   
-    h3 {
-      font-size: 15px;
-      color: var(--primary-color-brown);
+  .education-box .box-list .box-left > span small:nth-child(1) {
+    position: relative;
   
-      &.education-01 {
-        background: url(../images/office/icon-just.png) left center no-repeat;
-        background-size: 24px;
-        padding-left: 35px;
-        line-height: 24px;
-      }
-  
-      &.education-02 {
-        background: url(../images/office/icon-ssvs.png) left center no-repeat;
-        background-size: 24px;
-        padding-left: 35px;
-        line-height: 24px;
-      }
-  
-      &.certification-01 {
-        background: url(../images/office/icon-coursera.png) left center no-repeat;
-        background-size: 24px;
-        padding-left: 35px;
-        line-height: 24px;
-      }
-  
-      &.certification-02 {
-        background: url(../images/office/icon-ck.png) left center no-repeat;
-        background-size: 24px;
-        padding-left: 35px;
-        line-height: 24px;
-      }
+    &:after {
+      display: block;
+      content: '';
+      width: 12px;
+      height: 1px;
+      background-color: var(--other-color-white);
+      position: absolute;
+      right: -12px;
+      top: 7px;
     }
   }
   
-  /* --- Portfolio Section --- */
+  .certification-box .box-list a {
+    color: var(--secondary-color-black);
+  
+    &:hover {
+      color: var(--secondary-color-black);
+    }
+  }
+  
+  .education-01 h3 {
+    background: url(../images/office/icon-just.png) left center no-repeat;
+    background-size: 24px;
+    padding-left: 35px;
+    line-height: 24px;
+  }
+  
+  .education-02 h3 {
+    background: url(../images/office/icon-ssvs.png) left center no-repeat;
+    background-size: 24px;
+    padding-left: 35px;
+    line-height: 24px;
+  }
+  
+  .certification-01 h3 {
+    background: url(../images/office/icon-coursera.png) left center no-repeat;
+    background-size: 24px;
+    padding-left: 35px;
+    line-height: 24px;
+  }
+  
+  .certification-02 h3 {
+    background: url(../images/office/icon-ck.png) left center no-repeat;
+    background-size: 24px;
+    padding-left: 35px;
+    line-height: 24px;
+  }
+  
+  /* 專案作品 */
+  
   .portfolio-box {
     .content-title {
       position: relative;
@@ -779,7 +574,7 @@ footer {
       span {
         position: absolute;
         left: 105px;
-        top: 0;
+        top: 0px;
         display: block;
         width: 73px;
         padding: 3px 8px;
@@ -801,8 +596,6 @@ footer {
           padding: 10px 12px 12px 12px;
   
           h3 {
-            margin-bottom: 5px;
-  
             a {
               display: block;
               width: 100%;
@@ -810,6 +603,8 @@ footer {
               font-size: 15px;
               text-decoration: none;
             }
+  
+            margin-bottom: 5px;
           }
   
           ul {
@@ -822,6 +617,7 @@ footer {
               padding: 3px 10px;
               background-color: var(--other-color-gray10);
               color: var(--secondary-color-brown);
+              font-size: 11px;
               margin-right: 6px;
               margin-bottom: 6px;
               border-radius: 10px;
@@ -832,20 +628,14 @@ footer {
     }
   }
   
-  /* --- Footer Section --- */
+  /* --- 版尾 --- */
+  
   footer {
     width: calc(100% - 405px);
     margin-left: 345px;
-    padding: 5px 30px;
+    padding: 5px 30px 5px 30px;
     font-size: 11px;
     color: #666;
-  
-    @media screen and (max-width: 960px) {
-      width: 100%;
-      text-align: center;
-      padding: 5px 0;
-      margin: 0;
-    }
   }
   
   @media screen and (max-width: 1200px) {
@@ -855,6 +645,43 @@ footer {
       > div {
         width: 100%;
       }
+    }
+  }
+  
+  @media screen and (max-width: 960px) {
+    header {
+      width: 100%;
+      max-width: 100%;
+    }
+  
+    .main-flex {
+      display: block;
+  
+      .section-left {
+        position: unset;
+        max-width: 100%;
+        height: auto;
+      }
+  
+      .section-right {
+        width: calc(100% - 60px);
+        margin-left: 0;
+      }
+    }
+  
+    .content-flex {
+      display: flex;
+  
+      > div {
+        width: 50%;
+      }
+    }
+  
+    footer {
+      width: 100%;
+      text-align: center;
+      padding: 5px 0;
+      margin: 0;
     }
   }
   
@@ -869,44 +696,110 @@ footer {
   }
   
   @media screen and (max-width: 480px) {
+    /* 版頭 */
+  
     header {
       background-color: var(--other-color-gray10);
-      transition: all 0.8s;
+      transition: all .8s;
   
-      .logo,
-      .logo a {
+      .logo {
         width: 200px;
         height: 55px;
-        transition: all 0.8s;
+        transition: all .8s;
   
         a {
+          width: 200px;
+          height: 55px;
+          transition: all .8s;
           background: url(../images/header/logo-s.svg) center no-repeat;
           background-size: 200px;
+          transition: all .8s;
         }
       }
     }
   
     .header-m {
       background-color: var(--other-color-gray30);
-      transition: all 0.8s;
+      transition: all .8s;
   
-      .logo,
-      .logo a {
+      .logo {
         width: 144px;
         height: 35px;
-        transition: all 0.8s;
+        transition: all .8s;
   
         a {
+          width: 144px;
+          height: 35px;
+          transition: all .8s;
           background: url(../images/header/logo-s.svg) center no-repeat;
           background-size: 144px;
+          transition: all .8s;
         }
       }
     }
   
-    .main-flex {
-      .section-left {
-        margin-top: 65px;
+    .main-flex .section-left {
+      margin-top: 65px;
+    }
+  
+    /* 經歷 */
+  
+    .experience-box .box-list {
+      .box-left {
+        display: flex;
+        width: 100%;
+        padding-right: 20px;
+        align-items: center;
+        justify-content: space-between;
+      }
+  
+      display: block;
+  
+      .box-right {
+        width: calc(100% - 31px);
+        margin-left: 11px;
+  
+        ul li:first-child {
+          padding-left: 3px;
+        }
       }
     }
-  }
   
+    /* 技能 */
+  
+    .skills-box ul li {
+      margin: 0 5px 5px 0;
+    }
+  
+    /* 學歷 */
+  
+    .education-box .box-list, .certification-box .box-list {
+      display: block;
+    }
+  
+    .education-box .box-list .box-right, .certification-box .box-list .box-right {
+      margin-top: 5px;
+      width: calc(100% - 35px);
+      padding-left: 15px;
+      border-left: 0;
+      margin-left: 20px;
+    }
+  
+    .education-box .box-list .box-left, .certification-box .box-list .box-left {
+      width: 100%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+/*                       
+___  ___  ________   ________      ___       __      
+|\  \|\  \|\   ___  \|\   __  \    |\  \     |\  \    
+\ \  \\\  \ \  \\ \  \ \  \|\  \   \ \  \    \ \  \   
+\ \  \\\  \ \  \\ \  \ \   __  \   \ \  \  __\ \  \  
+ \ \  \\\  \ \  \\ \  \ \  \ \  \ __\ \  \|\__\_\  \ 
+  \ \_______\ \__\\ \__\ \__\ \__\\__\ \____________\
+   \|_______|\|__| \|__|\|__|\|__\|__|\|____________|
+   
+&copy; 2024 Una Wang. All Rights Reserved.
+*/     
