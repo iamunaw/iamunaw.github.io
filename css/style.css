@@ -180,6 +180,17 @@ header nav {
   color: var(--secondary-color-gray);
 }
 
+@media screen and (max-height: 870px) {
+  .info-box > img {
+    display: block;
+    width: 120px;
+    height: 120px;
+    border-radius: 120px;
+  }
+  .main-flex .section-left {
+    background: url(../images/header/bg.svg) var(--other-color-gray30) left top -25px repeat-x;
+  }
+}
 .contact-box ul li {
   display: block;
   width: auto;
