@@ -595,6 +595,19 @@ header nav {
   border-radius: 10px;
 }
 
+.btn-box-c {
+  display: flex;
+  align-items: center;
+  padding: 10px 0;
+}
+.btn-box-c > a.btn-view-more {
+  display: block;
+  width: 98px;
+  height: 20px;
+  text-indent: -9999px;
+  background: url(../images/portfolio/icon-view_more.svg) center no-repeat;
+}
+
 /* --- 版尾 --- */
 footer {
   width: calc(100% - 405px);

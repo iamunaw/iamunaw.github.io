@@ -648,6 +648,20 @@ header {
       }
     }
   }
+
+  .btn-box-c{
+    display: flex;
+    align-items: center;
+    padding: 10px 0;
+
+    > a.btn-view-more{
+      display: block;
+      width: 98px;
+      height: 20px;
+      text-indent: -9999px;
+      background: url(../images/portfolio/icon-view_more.svg) center no-repeat;
+    }
+  }
   
   /* --- 版尾 --- */
   
