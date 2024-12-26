@@ -598,6 +598,7 @@ header nav {
 .btn-box-c {
   display: flex;
   align-items: center;
+  justify-content: center;
   padding: 10px 0;
 }
 .btn-box-c > a.btn-view-more {
