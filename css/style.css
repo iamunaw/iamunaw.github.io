@@ -140,7 +140,7 @@ header nav.menu {
 
 .hamburger {
   position: absolute;
-  display: flex;
+  display: none;
   flex-direction: column;
   width: 24px;
   cursor: pointer;
