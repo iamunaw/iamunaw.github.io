@@ -28,15 +28,15 @@ document.addEventListener("DOMContentLoaded", function () {
   window.onscroll = function() {myFunction()};
 
   var header_box = document.getElementById("header");
-  var sticky = header_box.offsetTop;
+  //var sticky = header_box.offsetTop;
 
   function myFunction() {
     if (window.pageYOffset > 115) {
       $('header').addClass("header-m");
-      header_box.classList.add("sticky");
+      //header_box.classList.add("sticky");
     } else {
       $('header').removeClass("header-m");
-      header_box.classList.remove("sticky");
+      //header_box.classList.remove("sticky");
     }
   }
   
