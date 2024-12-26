@@ -132,8 +132,7 @@ header .logo a {
   background: url(../images/header/logo.svg);
   text-indent: -9999px;
 }
-header nav {
-  display: none;
+header nav.menu {
   flex-direction: column;
   background-color: #333;
   padding: 10px;

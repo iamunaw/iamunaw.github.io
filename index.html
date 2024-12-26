@@ -267,15 +267,11 @@
 
 <script>
   $(document).ready(function() {
-    const hamburger = document.getElementById('hamburger');
-    const menu = document.getElementById('menu');
-
-    // 使用被動事件監聽
-    hamburger.addEventListener('click', function() {
-      this.classList.toggle('active');
-      menu.classList.toggle('show');
-    }, { passive: true });
-  });
+      $('#hamburger').click(function() {
+        $(this).toggleClass('active');
+        $('#menu').toggleClass('show');
+      });
+   });
 
   //首頁-專案作品輪播
   $(document).ready(function () {
