@@ -38,10 +38,9 @@ function myFunction() {
 }
 
 // Hamburger menu
-const hamburger = document.getElementById('hamburger');
-const menu = document.getElementById('menu');
-
-hamburger.addEventListener('click', () => {
-  hamburger.classList.toggle('active');
-  menu.classList.toggle('show');
+$(document).ready(function() {
+  $('#hamburger').click(function() {
+    $(this).toggleClass('active');
+    $('#menu').toggleClass('show');
+  });
 });
