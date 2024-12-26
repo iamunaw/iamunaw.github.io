@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   
     // Load header
-    // loadContent('header.html', 'header');
+    loadContent('header.html', 'header');
   
     // Load footer
     loadContent('footer.html', 'footer');
