@@ -24,7 +24,7 @@ document.addEventListener("DOMContentLoaded", function () {
 
 
   
-  //版頭改變
+  // 版頭改變
   window.onscroll = function() {myFunction()};
 
   var header_box = document.getElementById("header");
@@ -40,3 +40,11 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   }
   
+  // 漢堡選單
+  const hamburger = document.getElementById('hamburger');
+  const menu = document.getElementById('menu');
+
+  hamburger.addEventListener('click', () => {
+    hamburger.classList.toggle('active');
+    menu.classList.toggle('show');
+  });
