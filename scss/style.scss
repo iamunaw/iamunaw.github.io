@@ -653,7 +653,6 @@ header {
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 10px 0;
 
     > a.btn-view-more{
       display: block;
@@ -661,6 +660,7 @@ header {
       height: 20px;
       text-indent: -9999px;
       background: url(../images/portfolio/icon-view_more.svg) center no-repeat;
+      margin-top: 20px;
     }
   }
   
