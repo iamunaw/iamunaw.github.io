@@ -16,7 +16,7 @@ document.addEventListener("DOMContentLoaded", function () {
     }
   
     // Load header
-    loadContent('header.html', 'header');
+    // loadContent('header.html', 'header');
   
     // Load footer
     loadContent('footer.html', 'footer');
@@ -39,4 +39,12 @@ document.addEventListener("DOMContentLoaded", function () {
       //header_box.classList.remove("sticky");
     }
   }
+
+  // 漢堡展開
+  $(document).ready(function() {
+    $('#hamburger').click(function() {
+      $(this).toggleClass('active');
+      $('#menu').toggleClass('show');
+    });
+  });
   
