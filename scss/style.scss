@@ -120,16 +120,20 @@ header {
   }
 
   .hamburger {
+    position: absolute;
     display: flex;
     flex-direction: column;
-    width: 30px;
+    width: 24px;
     cursor: pointer;
     margin: 10px;
+    z-index: 10;
+    left: 10px;
+    top: 10px;
 
     > div {
-      height: 4px;
+      height: 2px;
       background: var(--primary-color-brown);
-      margin: 5px 0;
+      margin: 3px 0;
       transition: transform 0.3s;
     }
   }
