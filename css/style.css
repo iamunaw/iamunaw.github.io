@@ -133,14 +133,42 @@ header .logo a {
   text-indent: -9999px;
 }
 header nav.menu {
+  display: block;
+  position: absolute;
+  left: -300px;
+  top: 0;
+  width: 265px;
+  height: 100vh;
+  background-color: var(--primary-color-brown);
+  padding: 20px 20px 40px 60px;
+  opacity: 0;
+  transition: all 1.2s;
+}
+header nav.menu a {
+  display: block;
+  color: var(--primary-color-brown);
+  text-decoration: none;
+  font-size: 16px;
+  line-height: 1.5;
+  margin-bottom: 10px;
+}
+header nav.menu.show {
+  display: block;
+  width: 265px;
+  left: 0;
+  top: 0;
   flex-direction: column;
-  background-color: #333;
-  padding: 10px;
+  background-color: var(--primary-color-brown);
+  transition: all 1.2s;
+  opacity: 1;
+}
+header nav.menu.show a {
+  color: var(--other-color-white);
 }
 
 .hamburger {
   position: absolute;
-  display: none;
+  display: none; /* block */
   flex-direction: column;
   width: 24px;
   cursor: pointer;
@@ -159,6 +187,8 @@ header nav.menu {
 /* 漢堡展開旋轉效果 */
 .hamburger.active div:nth-child(1) {
   transform: rotate(45deg) translateY(8px);
+  background-color: var(--other-color-white);
+  transition: all 0.5s;
 }
 
 .hamburger.active div:nth-child(2) {
@@ -167,9 +197,10 @@ header nav.menu {
 
 .hamburger.active div:nth-child(3) {
   transform: rotate(-45deg) translateY(-8px);
+  background-color: var(--other-color-white);
+  transition: all 0.5s;
 }
 
-/* --- 內容 --- */
 .main-flex {
   display: flex;
 }
@@ -186,6 +217,10 @@ header nav.menu {
   width: calc(100% - 405px);
   margin-left: 345px;
   padding: 25px 30px 30px 30px;
+}
+.main-flex .section-center {
+  width: 100%;
+  padding: 85px 30px 30px 30px;
 }
 
 @media screen and (max-height: 870px) {
@@ -599,6 +634,12 @@ header nav.menu {
 .portfolio-box .box-list .card {
   background-color: var(--other-color-white);
 }
+.portfolio-box .box-list .card a img {
+  display: block;
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
 .portfolio-box .box-list .card > div {
   padding: 10px 12px 12px 12px;
 }
@@ -642,7 +683,34 @@ header nav.menu {
   margin-top: 20px;
 }
 
-/* --- 版尾 --- */
+/* portfolio */
+#portfolio .portfolio-box .box-list {
+  display: grid;
+  grid-template: repeat(4, 1fr)/repeat(4, 1fr);
+  gap: 15px 20px;
+}
+#portfolio .portfolio-box .box-list .card {
+  width: 100%;
+}
+
+@media screen and (max-width: 1366px) {
+  #portfolio .portfolio-box .box-list {
+    grid-template: repeat(3, 1fr)/repeat(3, 1fr);
+    gap: 20px 20px;
+  }
+}
+@media screen and (max-width: 1280px) {
+  #portfolio .portfolio-box .box-list {
+    grid-template: repeat(2, 1fr)/repeat(2, 1fr);
+    gap: 20px 20px;
+  }
+}
+@media screen and (max-width: 480px) {
+  #portfolio .portfolio-box .box-list {
+    grid-template: repeat(1, 1fr)/repeat(1, 1fr);
+    gap: 20px 20px;
+  }
+}
 footer {
   width: calc(100% - 405px);
   margin-left: 345px;
@@ -675,6 +743,9 @@ footer {
   .main-flex .section-right {
     width: calc(100% - 60px);
     margin-left: 0;
+  }
+  #portfolio .main-flex {
+    display: flex;
   }
   .content-flex {
     display: flex;

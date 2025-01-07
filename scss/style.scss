@@ -83,8 +83,7 @@ body,html{ background-color: var(--other-color-gray10); font-size: 13px; line-he
 /* --- 共用 --- */
 .content-title{ display: inline-block; width: auto; padding-bottom: 6px; margin-bottom:10px; font-size: 16px; line-height: 1.5; color:var(--primary-color-brown); border-bottom:2px solid var(--other-color-white);}
 
-//* --- 版頭 --- */
-
+//* --- 版頭 --- *//
 header {
     width: 100%;
     max-width: 345px;
@@ -112,15 +111,48 @@ header {
     }
   
     nav.menu {
+      display: block;
+      position: absolute;
+      left: -300px;
+      top: 0;
+      width: 265px;
+      height: 100vh;
+      background-color:var(--primary-color-brown);
+      padding: 20px 20px 40px 60px;
+      opacity: 0;
+      transition: all 1.2s;
+      
+        a{
+          display: block;
+          color: var(--primary-color-brown);
+          text-decoration: none;
+          font-size: 16px;
+          line-height: 1.5;
+          margin-bottom: 10px;
+
+      }
+      
+    }
+    nav.menu.show {
+      display: block;
+      width: 265px;
+      left: 0;
+      top: 0;
       flex-direction: column;
-      background-color: #333;
-      padding: 10px;
+      background-color:var(--primary-color-brown);
+      transition: all 1.2s;
+      opacity: 1;
+
+        a{
+          color: var(--other-color-white);
+
+      }
     }
   }
 
   .hamburger {
     position: absolute;
-    display: none;
+    display: none;/* block */
     flex-direction: column;
     width: 24px;
     cursor: pointer;
@@ -140,6 +172,8 @@ header {
   /* 漢堡展開旋轉效果 */
   .hamburger.active div:nth-child(1) {
     transform: rotate(45deg) translateY(8px);
+    background-color: var(--other-color-white);
+    transition: all .5s;
   }
   
   .hamburger.active div:nth-child(2) {
@@ -148,12 +182,14 @@ header {
   
   .hamburger.active div:nth-child(3) {
     transform: rotate(-45deg) translateY(-8px);
+    background-color: var(--other-color-white);
+    transition: all .5s;
   }
   
 
   
   
-  /* --- 內容 --- */
+  //* --- 內容 --- *//
   
   .main-flex {
     display: flex;
@@ -173,6 +209,12 @@ header {
       margin-left: 345px;
       padding: 25px 30px 30px 30px;
     }
+
+    .section-center {
+      width: 100%;
+      padding: 85px 30px 30px 30px;
+    }
+
   }
 
   @media screen and (max-height: 870px) {
@@ -649,6 +691,15 @@ header {
   
       .card {
         background-color: var(--other-color-white);
+
+        a{
+          img{
+            display: block;
+            width: 100%;
+            max-width: 100%;
+            height: auto;
+          }
+        }
   
         > div {
           padding: 10px 12px 12px 12px;
@@ -700,8 +751,46 @@ header {
       margin-top: 20px;
     }
   }
+
+  //* --- 靜態頁 --- *//
+  /* portfolio */
+
+  #portfolio .portfolio-box .box-list{ 
+    display: grid;
+    grid-template: repeat(4, 1fr) / repeat(4, 1fr);
+    gap: 15px 20px;
+
+    .card{
+      width: 100%;
+
+    }
+  }
+
+  @media screen and (max-width: 1366px) {
+    #portfolio .portfolio-box .box-list{ 
+      grid-template: repeat(3, 1fr) / repeat(3, 1fr);
+      gap: 20px 20px;
+    }
+  }
+
+  @media screen and (max-width: 1280px) {
+    #portfolio .portfolio-box .box-list{ 
+      grid-template: repeat(2, 1fr) / repeat(2, 1fr);
+      gap: 20px 20px;
+    }
+  }
+
+  @media screen and (max-width: 480px) {
+    #portfolio .portfolio-box .box-list{ 
+      grid-template: repeat(1, 1fr) / repeat(1, 1fr);
+      gap: 20px 20px;
+    }
+  }
   
-  /* --- 版尾 --- */
+
+
+  
+  //* --- 版尾 --- *//
   
   footer {
     width: calc(100% - 405px);
@@ -740,6 +829,10 @@ header {
         width: calc(100% - 60px);
         margin-left: 0;
       }
+    }
+
+    #portfolio .main-flex {
+      display: flex;
     }
   
     .content-flex {
