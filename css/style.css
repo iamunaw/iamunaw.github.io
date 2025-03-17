@@ -129,8 +129,25 @@ header .logo a {
   width: 146px;
   height: 85px;
   margin: 0 auto;
-  background: url(../images/header/logo.svg);
+  background: url(../images/header/logo.svg) center no-repeat;
+  background-size: 100%;
   text-indent: -9999px;
+}
+header .sort_list {
+  margin-top: 30px;
+  display: flex;
+  justify-content: end;
+}
+header .sort_list li {
+  display: inline-block;
+  color: var(--primary-color-brown);
+  line-height: 36px;
+  font-size: 16px;
+  font-weight: 500;
+  padding: 0 30px;
+  border-top-left-radius: 36px;
+  border-bottom-left-radius: 36px;
+  background-color: var(--other-color-gray10);
 }
 header nav.menu {
   display: block;
@@ -164,6 +181,20 @@ header nav.menu.show {
 }
 header nav.menu.show a {
   color: var(--other-color-white);
+}
+
+/* 針對靜態頁調整寬度 */
+#portfolio header {
+  width: 140px;
+  height: 100vh;
+}
+#portfolio header .logo {
+  width: 115px;
+  height: 65px;
+}
+#portfolio header .logo a {
+  width: 115px;
+  height: 65px;
 }
 
 .hamburger {
@@ -220,7 +251,7 @@ header nav.menu.show a {
 }
 .main-flex .section-center {
   width: 100%;
-  padding: 85px 30px 30px 30px;
+  padding: 20px 20px 30px 160px;
 }
 
 @media screen and (max-height: 870px) {
@@ -728,9 +759,13 @@ footer {
   }
 }
 @media screen and (max-width: 960px) {
-  header {
+  #portfolio header, header {
     width: 100%;
     max-width: 100%;
+    height: auto;
+  }
+  #portfolio header .sort_list, header .sort_list {
+    display: none;
   }
   .main-flex {
     display: block;
@@ -743,6 +778,9 @@ footer {
   .main-flex .section-right {
     width: calc(100% - 60px);
     margin-left: 0;
+  }
+  .main-flex .section-center {
+    padding: 85px 20px 30px 20px;
   }
   #portfolio .main-flex {
     display: flex;
@@ -770,16 +808,16 @@ footer {
 }
 @media screen and (max-width: 480px) {
   /* 版頭 */
-  header {
+  #portfolio header, header {
     background-color: var(--other-color-gray10);
     transition: all 0.8s;
   }
-  header .logo {
+  #portfolio header .logo, header .logo {
     width: 200px;
     height: 55px;
     transition: all 0.8s;
   }
-  header .logo a {
+  #portfolio header .logo a, header .logo a {
     width: 200px;
     height: 55px;
     transition: all 0.8s;
@@ -787,16 +825,16 @@ footer {
     background-size: 200px;
     transition: all 0.8s;
   }
-  .header-m {
+  #portfolio .header-m, .header-m {
     background-color: var(--other-color-gray30);
     transition: all 0.8s;
   }
-  .header-m .logo {
+  #portfolio .header-m .logo, .header-m .logo {
     width: 144px;
     height: 35px;
     transition: all 0.8s;
   }
-  .header-m .logo a {
+  #portfolio .header-m .logo a, .header-m .logo a {
     width: 144px;
     height: 35px;
     transition: all 0.8s;

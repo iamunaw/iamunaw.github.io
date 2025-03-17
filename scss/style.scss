@@ -105,11 +105,30 @@ header {
         width: 146px;
         height: 85px;
         margin: 0 auto;
-        background: url(../images/header/logo.svg);
+        background: url(../images/header/logo.svg) center no-repeat;
+        background-size: 100%;
         text-indent: -9999px;
       }
+
+      
     }
-  
+    .sort_list{
+        margin-top: 30px;
+        display: flex;
+        justify-content: end;
+
+        li{
+          display: inline-block;
+          color:var(--primary-color-brown);
+          line-height: 36px;
+          font-size: 16px;
+          font-weight: 500;
+          padding:0 30px;
+          border-top-left-radius: 36px;
+          border-bottom-left-radius: 36px;
+          background-color: var(--other-color-gray10);
+        }
+    }
     nav.menu {
       display: block;
       position: absolute;
@@ -148,8 +167,28 @@ header {
 
       }
     }
+}
+/* 針對靜態頁調整寬度 */
+#portfolio{
+
+  header{
+    width: 140px;
+    height: 100vh;
+
+    .logo {
+      width: 115px;
+      height: 65px;
+  
+      a {
+        width: 115px;
+        height: 65px;
+      }
+    }
+    
   }
 
+
+}
   .hamburger {
     position: absolute;
     display: none;/* block */
@@ -212,7 +251,7 @@ header {
 
     .section-center {
       width: 100%;
-      padding: 85px 30px 30px 30px;
+      padding: 20px 20px 30px 160px;
     }
 
   }
@@ -811,9 +850,14 @@ header {
   }
   
   @media screen and (max-width: 960px) {
-    header {
+    #portfolio header,header {
       width: 100%;
       max-width: 100%;
+      height: auto;
+
+      .sort_list{
+        display: none;
+      }
     }
   
     .main-flex {
@@ -828,6 +872,10 @@ header {
       .section-right {
         width: calc(100% - 60px);
         margin-left: 0;
+      }
+
+      .section-center {
+        padding:85px 20px 30px 20px ;
       }
     }
 
@@ -864,7 +912,7 @@ header {
   @media screen and (max-width: 480px) {
     /* 版頭 */
   
-    header {
+    #portfolio header,header {
       background-color: var(--other-color-gray10);
       transition: all .8s;
   
@@ -884,7 +932,7 @@ header {
       }
     }
   
-    .header-m {
+    #portfolio .header-m,.header-m {
       background-color: var(--other-color-gray30);
       transition: all .8s;
   
