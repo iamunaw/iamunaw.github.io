@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="js/main.js"></script>
+    <!-- AOS & OWL JavaScript -->
+    <script src="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- AOS & OWL CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+
+    <script>
+      document.addEventListener('DOMContentLoaded', () => {
+        AOS.init({
+          offset: 120, // 元素距離 viewport 的觸發距離
+          delay: 200, // 延遲動畫執行的時間 (ms)
+          duration: 600, // 動畫持續時間 (ms)
+          once: true, // 是否只執行一次
+          mirror: false // 滑回時是否重複動畫
+        });
+      }); 
+      
+    </script>
+
+    <title>Una.W Portfolio｜個人作品集 - 參賽｜2023TheF2E立委競選官網</title>
+</head>
+<body id="portfolio">                
+    <!-- *版頭* -->
+    <header>
+      <!--網站logo-->
+      <div class="logo"><a href="index.html" title="Una.W Portfolio｜個人作品">Una.W Portfolio｜個人作品集</a></div>
+      <ul class="sort_list">
+        <li>介面設計</li>
+      </ul>
+      <!--漢堡選單-->
+      <div class="hamburger" id="hamburger">
+        <div></div>
+        <div></div>
+        <div></div>
+      </div>
+      <!--展開選單-->
+      <nav class="menu" id="menu">
+        <ul class="main-menu">
+          <li><a href="index.html" class="" title="Home 回首頁">Home 回首頁</a></li>
+          <li><a href="#" class="" title="About 關於我">About 關於我</a></li>
+          <li><a href="portfolio.html" class="" title="Portfolio 作品集">Portfolio 作品集</a></li>
+          <li><a href="#" class="" title="Contact 聯繫我">Contact 聯繫我</a></li>
+        </ul>
+      </nav>
+    </header>
+    
+    <!-- *主內容區* -->
+    <main class="main-flex">
+      <!-- *主內容區-左側* -->
+      <section class="section-center portfolio-box">
+        <div class="box-list">
+            <div class="card"><!--BBC-->
+              <a href="#"><img src="images/portfolio/portfolio-10.png"></a>
+              <div>
+                <h3><a href="#">統一集團｜iOPEN Mall 線上開店平台</a></h3>
+                <ul><li>#UI</li><li>#Guidelines</li><li>#Front-End</li></ul>
+              </div>
+            </div>
+            <div class="card"><!--亞灣-->
+              <a href="#"><img src="images/portfolio/portfolio-01.png"></a>
+              <div>
+                <h3><a href="#">工研院｜亞灣海陸尋寶遊</a></h3>
+                <ul><li>#UI</li><li>#Guidelines</li><li>#CI</li><li>#Front-End</li></ul>
+              </div>
+            </div>
+            <div class="card"><!--好速配-->
+              <a href="#"><img src="images/portfolio/portfolio-09.png"></a>
+              <div>
+                <h3><a href="#">全家合作案｜好速配點餐外送平台</a></h3>
+                <ul><li>#UI</li><li>#Guidelines</li><li>#APP</li><li>#Front-End</li></ul>
+              </div>
+            </div>
+            <div class="card"><!--LINE-->
+                <a href="#"><img src="images/portfolio/portfolio-04.png"></a>
+                <div>
+                  <h3><a href="#">LINE Taiwan｜LINE Friends購物平台</a></h3>
+                  <ul><li>#UI</li><li>#Guidelines</li><li>#Front-End</li></ul>
+                </div>
+            </div>
+            <div class="card"><!--城鄉島遊-->
+              <a href="#"><img src="images/portfolio/portfolio-07.png"></a>
+              <div>
+                <h3><a href="#">政府專案｜LOHAS城鄉島遊</a></h3>
+                <ul><li>#UI</li><li>#Guidelines</li><li>#CI</li><li>#Front-End</li></ul>
+              </div>
+            </div>
+            <div class="card"><!--Nkust-->
+              <a href="#"><img src="images/portfolio/portfolio-05.png"></a>
+              <div>
+                <h3><a href="#">高科大｜物流大師名人堂</a></h3>
+                <ul><li>#UI</li><li>#Guidelines</li><li>#Phototype</li></ul>
+              </div>
+            </div>
+            <div class="card"><!--美麗台-->
+              <a href="#"><img src="images/portfolio/portfolio-06.png"></a>
+              <div>
+                <h3><a href="#">新光三越｜SKM美麗台線上購物平台</a></h3>
+                <ul><li>#UI</li><li>#Front-End</li></ul>
+              </div>
+            </div>
+            <div class="card"><!--TBS-->
+              <a href="#"><img src="images/portfolio/portfolio-08.png"></a>
+              <div>
+                <h3><a href="#">美體小舖｜The Body Shop購物平台</a></h3>
+                <ul><li>#UI</li><li>#Front-End</li></ul>
+              </div>
+            </div>
+            <div class="card"><!--五倍券-->
+              <a href="#"><img src="images/portfolio/portfolio-03.png"></a>
+              <div>
+                <h3><a href="#">政府專案｜中企處振興五倍券平台</a></h3>
+                <ul><li>#UI</li><li>#Accessibility</li><li>#Front-End</li></ul>
+              </div>
+            </div>
+            <div class="card"><!--立委-->
+              <a href="#"><img src="images/portfolio/portfolio-02.png"></a>
+              <div>
+                <h3><a href="#">參賽｜2023TheF2E立委競選官網</a></h3>
+                <ul><li>#UI</li><li>#Guidelines</li><li>#Phototype</li></ul>
+              </div>
+            </div>
+           
+
+        </div>
+
+
+      </section>
+    </main>
+
+    <!-- *版尾* -->
+    <div id="footer"></div>
+
+
+
+
+
+</body>
+</html>
