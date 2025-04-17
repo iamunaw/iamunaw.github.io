@@ -828,6 +828,50 @@ header {
   
 
 
+  /* thef2e */
+  .top-p-name{
+    position: absolute;
+    top: 0;
+    left: 140px;
+    width: calc( 100% - 170px);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 15px;
+    background-color:var(--other-color-white);
+
+      h3{
+        display: flex;
+        align-items: center;
+        gap: 10px;
+        width: 50%;
+        font-size: 20px;
+
+          a{
+            display: block;
+            width: 20px;
+            height: 20px;
+            background: url(../images/other/back.svg) center no-repeat;
+          }
+        
+      }
+      ul{ 
+        display: inline-flex;
+
+        li{
+          display: inline-block;
+          font-size: 11px;
+          padding: 3px 10px;
+          background-color: var(--other-color-gray10);
+          color: var(--secondary-color-brown);
+          font-size: 11px;
+          margin-right: 6px;
+          margin-bottom: 6px;
+          border-radius: 10px;
+        }
+      
+      }
+  }
   
   //* --- 版尾 --- *//
   

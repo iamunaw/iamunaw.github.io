@@ -742,6 +742,46 @@ header nav.menu.show a {
     gap: 20px 20px;
   }
 }
+/* thef2e */
+.top-p-name {
+  position: absolute;
+  top: 0;
+  left: 140px;
+  width: calc(100% - 170px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 15px;
+  background-color: var(--other-color-white);
+}
+.top-p-name h3 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  width: 50%;
+  font-size: 20px;
+}
+.top-p-name h3 a {
+  display: block;
+  width: 20px;
+  height: 20px;
+  background: url(../images/other/back.svg) center no-repeat;
+}
+.top-p-name ul {
+  display: inline-flex;
+}
+.top-p-name ul li {
+  display: inline-block;
+  font-size: 11px;
+  padding: 3px 10px;
+  background-color: var(--other-color-gray10);
+  color: var(--secondary-color-brown);
+  font-size: 11px;
+  margin-right: 6px;
+  margin-bottom: 6px;
+  border-radius: 10px;
+}
+
 footer {
   width: calc(100% - 405px);
   margin-left: 345px;
